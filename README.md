@@ -22,19 +22,18 @@ A GitHub-ready OpenClaw agent workspace template for production CS/internal issu
 ## Actual workflow (diagram)
 ```mermaid
 flowchart TD
-    A[Incoming CS/Internal Issue] --> B[Set state to NEW<br/>Summarize + category + severity]
-    B --> C[Issue Skeleton output]
-    C --> D[Quick Triage<br/>Facts / Guesses / Missing Info]
-    D --> E[Infer likely module(s)<br/>confidence-aware]
-    E --> F[Owner suggestion<br/>primary + backup]
-    F --> G[Next actions + Status Move to TRIAGED/ASSIGNED]
-    G --> H{Human-confirmed fix/outcome?}
-    H -- No --> I[Stay in nearest valid status<br/>record nuance in notes]
+    A["Incoming CS or Internal Issue"] --> B["Set NEW state and summarize issue"]
+    B --> C["Create Issue Skeleton output"]
+    C --> D["Quick triage with facts, guesses, and missing info"]
+    D --> E["Infer likely modules with confidence note"]
+    E --> F["Suggest primary owner and backup owner"]
+    F --> G["Define next actions and move to TRIAGED or ASSIGNED"]
+    G --> H{"Is fix or outcome confirmed by a human?"}
+    H -- No --> I["Keep nearest valid status and add nuance in notes"]
     I --> D
-    H -- Yes --> J[Move to RESOLVED]
-    J --> K[Learning loop<br/>capture signal, routing result, mapping update]
+    H -- Yes --> J["Move to RESOLVED"]
+    J --> K["Run learning loop and update routing signals"]
 ```
-
 ## OpenClaw quick start
 ```bash
 cp -R meta-coordinator-agent-template ~/.openclaw/workspace-meta-coordinator
