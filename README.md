@@ -72,7 +72,6 @@ The prompt stack is intentionally opinionated. New issues should always be outpu
 - `references/log-only-workflow.md` — file-log-based operations
 - `references/learning-loop.md` — post-resolution quality improvement loop
 - `references/demo-script.md` — demo scenario script
-- `references/demo-script-ko.md` — deprecated pointer to the English demo script
 
 ## HEARTBEAT.md: optional decision
 `HEARTBEAT.md` is **optional** in OpenClaw.
