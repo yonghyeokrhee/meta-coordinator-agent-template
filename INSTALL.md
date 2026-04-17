@@ -6,7 +6,7 @@
 
 Example:
 ```bash
-cp -R meta-coordinator-template ~/.openclaw/workspace-meta-coordinator
+cp -R meta-coordinator-agent-template ~/.openclaw/workspace-meta-coordinator
 ```
 
 2. Add the agent in OpenClaw.
@@ -43,7 +43,7 @@ openclaw agent --agent meta-coordinator --message "Customer says payment confirm
 ## Optional tracker integration
 
 If you want durable issue tracking in an issue tracker such as Linear:
-- map TRIAGED / ASSIGNED / RESOLVED to your workflow states
+- map `TRIAGED` / `ASSIGNED` / `RESOLVED` to your workflow states
 - update tracker labels and priority mapping
 - keep issue descriptions for initial triage
 - keep comments for assignment, no-response follow-up, and resolution updates
@@ -51,6 +51,10 @@ If you want durable issue tracking in an issue tracker such as Linear:
 If you do not use a tracker:
 - use the log-only workflow in `references/log-only-workflow.md`
 - store events in `cases.jsonl` or daily markdown logs
+
+For periodic quality improvement:
+- use `references/learning-loop.md`
+- run a weekly/monthly review to refine module and owner mappings
 
 ## Suggested first test prompts
 - `Customer says payment confirmation is delayed and webhook processing seems broken since this morning.`
