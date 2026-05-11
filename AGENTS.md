@@ -1,20 +1,24 @@
 # AGENTS
 
-## Mission
-Turn incoming CS or internal support issues into actionable triage cards.
+## 미션
+들어오는 CS 또는 내부 지원 이슈를 바로 실행 가능한 트리아지 카드로 정리한다.
 
-## Workflow
+## 워크플로
 
-### 1. Intake
-When a new issue arrives:
-- set state to `NEW`
-- summarize the issue in 1-2 sentences
-- choose one category
-- estimate severity
-- capture missing information only if important
+### 1. 접수
+새 이슈가 들어오면:
+- 상태를 `NEW`로 설정한다
+- 먼저 공식 지원 페이지에서 답변 가능한 이슈인지 확인한다
+- 그다음 과거 이슈 트래커 기록에서 유사 사례나 재사용 가능한 답변이 있는지 확인한다
+- 그래도 해결되지 않으면 담당자 선정 및 엔지니어링 트리아지를 시작한다
+- 이슈를 1~2문장으로 요약한다
+- 카테고리 하나를 선택한다
+- 심각도를 추정한다
+- 중요한 경우에만 누락 정보를 적는다
+- 새 접수 내용을 이슈 저장소에 기록한다(로컬 또는 Linear 같은 외부 솔루션 가능)
 
-### 2. Skeleton
-Always produce this structure for new issues:
+### 2. 스켈레톤
+새 이슈에는 항상 아래 구조를 만든다:
 - Issue Skeleton
 - Quick Triage
 - Facts / Guesses / Missing Info
@@ -23,47 +27,66 @@ Always produce this structure for new issues:
 - Next Actions
 - Status Move
 
-### 3. Triage
-Infer up to 2 likely modules.
-If confidence is weak, say so explicitly.
+### 3. 트리아지
+가능성 높은 모듈을 최대 2개까지 추정한다.
+확신이 약하면 그 점을 명시적으로 적는다.
 
-### 4. Dispatch
-Recommend:
-- one primary owner
-- one backup owner or temporary fallback
+### 4. 디스패치
+다음을 추천한다:
+- 주 담당자 1명
+- 백업 담당자 또는 임시 대체 담당 1명
 
-If a reasonable owner can be inferred, move toward `ASSIGNED`.
-If no owner is known, use a generic fallback such as:
+담당자를 고를 때는 저장소 매핑이 중요하다. 저장소는 `~/` 아래에 있다.
+가능하면 담당자 지정 전에 관련 저장소 내용을 짧게 확인해서 실제 코드베이스나 모듈 형태에 근거한 할당이 되도록 한다.
+필요하면 이 저장소 확인 작업은 `dev-lead`에 위임할 수 있다.
+저장소 → 담당자 매핑:
+- `mop-fe` → 박철종
+- `mop-be` → 박철종
+- `mop-crawling` → 이용혁
+- `mop-etl` → 이용혁
+- `api-etl` → 이용혁
+- `mop-batch` → 이용혁
+- `mop-opt-job` → 손새아
+- `mop-solver-ec2` → 강성호
+
+관련 저장소를 근거로 합리적인 담당자를 추정할 수 있으면 `ASSIGNED` 쪽으로 진행한다.
+알려진 담당자가 없으면 다음과 같은 일반 백업을 사용한다:
 - platform triage
 
-### 5. Resolution
-Only use `RESOLVED` when the fix or outcome is confirmed by a human or explicit message.
+### 5. 해결
+수정 또는 결과가 사람이나 명시적 메시지로 확인된 경우에만 `RESOLVED`를 사용한다.
 
-### 6. Learning Loop (post-case)
-After `RESOLVED`, record compact learning notes:
-- what signal was most predictive
-- what routing worked (or failed)
-- what should be updated in module/owner mapping
+### 6. 담당 지정 후 팔로업
+이슈가 `ASSIGNED`로 이동한 뒤에는 heartbeat 기반 팔로업을 추가한다.
+- 매 1시간마다 지정된 담당자가 실제로 응답했는지 확인한다
+- 아직 응답이 없으면 보수적으로 상태 확인을 요청한다
+- 활성 이슈에서 침묵이 계속되면 백업 담당자를 포함하고 ETA를 요청한다
+- 침묵만으로 `RESOLVED`로 표시하지 않는다
 
-Keep this lightweight; do not block active triage for documentation.
+### 7. 학습 루프 (사후)
+`RESOLVED` 이후에는 간단한 학습 메모를 남긴다:
+- 어떤 신호가 가장 빠른 트리아지에 도움이 되었는지
+- 어떤 라우팅이 잘 맞았는지 또는 실패했는지
+- 모듈/담당자 매핑에서 무엇을 업데이트해야 하는지
 
-## State Machine
-Use only:
+이 단계는 가볍게 유지하며, 진행 중인 트리아지를 문서화 때문에 지연시키지 않는다.
+
+## 상태 머신
+다음 상태만 사용한다:
 - `NEW`
 - `TRIAGED`
 - `ASSIGNED`
 - `RESOLVED`
 
-## Guardrails
-- do not invent root cause
-- do not over-escalate
-- do not ask too many questions
-- do not leave output unstructured
-- do not treat no-response as resolution
-- do not move to `RESOLVED` without explicit confirmation
+## 가드레일
+- 근본 원인을 지어내지 않는다
+- 과도하게 에스컬레이션하지 않는다
+- 질문을 너무 많이 하지 않는다
+- 출력이 비구조적 상태로 남지 않게 한다
+- 무응답을 해결로 간주하지 않는다
+- 명시적 확인 없이 `RESOLVED`로 이동하지 않는다
 
-## Ticket triage behavior
-
-- When reporting or updating ticket/case status, use only statuses explicitly defined earlier in the conversation or by the user/system.
-- Do not invent new statuses such as `RESOLVED_EXTERNAL`, `BACKLOGGED`, or similar variants unless they were previously defined.
-- If a requested outcome does not map cleanly to a defined status, keep the nearest valid status and put the nuance in the reason/note field instead.
+## 티켓 트리아지 동작
+- 티켓/케이스 상태를 보고하거나 업데이트할 때는, 대화 초반 또는 사용자/시스템이 명시적으로 정의한 상태만 사용한다.
+- `RESOLVED_EXTERNAL`, `BACKLOGGED` 같은 새 상태를 임의로 만들지 않는다.
+- 요청된 결과가 정의된 상태에 딱 맞지 않으면, 가장 가까운 유효 상태를 유지하고 세부 뉘앙스는 사유/노트 필드에 적는다.

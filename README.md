@@ -1,25 +1,25 @@
 # meta-coordinator-agent-template
 
-A GitHub-ready OpenClaw agent workspace template for production CS/internal issue coordination.
+프로덕션 CS/내부 이슈 조정을 위한 GitHub 준비형 OpenClaw 에이전트 워크스페이스 템플릿입니다.
 
-`meta-coordinator` is a lightweight meta-agent that converts raw support or ops input into actionable triage artifacts, recommends owner routing, manages strict case state transitions, and improves over time from resolved-case history.
+`meta-coordinator`는 거친 지원/운영 입력을 실행 가능한 트리아지 산출물로 바꾸고, 담당자 라우팅을 추천하며, 엄격한 케이스 상태 전환을 관리하고, 해결된 케이스 이력을 바탕으로 점진적으로 개선되는 가벼운 메타 에이전트입니다.
 
-## What this template is designed for
-- payment confirmation delays
-- billing and webhook incidents
-- entitlement/permission propagation failures
-- support request triage and developer handoff
-- no-response follow-up on active incidents
-- conservative resolution evaluation and status control
+## 이 템플릿이 설계된 대상
+- 결제 확인 지연
+- 과금 및 웹훅 인시던트
+- 권한/퍼미션 전파 실패
+- 지원 요청 트리아지 및 개발자 핸드오프
+- 활성 인시던트에 대한 무응답 팔로업
+- 보수적인 해결 판정 및 상태 제어
 
-## Core operating model
-1. **Skeleton-first intake**: structure the issue before routing.
-2. **Conservative triage**: keep facts, guesses, and missing info separate.
-3. **Actionable dispatch**: always recommend primary + backup owner.
-4. **Strict state machine**: `NEW -> TRIAGED -> ASSIGNED -> RESOLVED`.
-5. **Learning loop**: feed resolved-case learnings into better future routing.
+## 핵심 운영 모델
+1. **스켈레톤 우선 접수**: 라우팅 전에 이슈를 구조화한다.
+2. **보수적 트리아지**: 사실, 추측, 누락 정보를 분리한다.
+3. **실행 가능한 디스패치**: 항상 주 담당자와 백업 담당자를 함께 제안한다.
+4. **엄격한 상태 머신**: `NEW -> TRIAGED -> ASSIGNED -> RESOLVED`.
+5. **학습 루프**: 해결된 케이스의 학습을 이후 라우팅 품질 개선에 반영한다.
 
-## Actual workflow (diagram)
+## 실제 워크플로 (다이어그램)
 ```mermaid
 flowchart TD
     A["Incoming CS or Internal Issue"] --> B["Set NEW state and summarize issue"]
@@ -34,7 +34,8 @@ flowchart TD
     H -- Yes --> J["Move to RESOLVED"]
     J --> K["Run learning loop and update routing signals"]
 ```
-## OpenClaw quick start
+
+## OpenClaw 빠른 시작
 ```bash
 cp -R meta-coordinator-agent-template ~/.openclaw/workspace-meta-coordinator
 
@@ -44,13 +45,13 @@ openclaw agents add meta-coordinator \
   --non-interactive
 ```
 
-Run a smoke test:
+간단한 스모크 테스트:
 ```bash
 openclaw agent --agent meta-coordinator --message "Customer reports payment confirmation delays and possible webhook failures since this morning."
 ```
 
-## Required output contract for new issues
-The prompt stack is intentionally opinionated. New issues should always be output in this order:
+## 신규 이슈의 필수 출력 계약
+이 프롬프트 스택은 의도적으로 강한 규칙을 가진다. 새 이슈는 항상 아래 순서로 출력해야 한다:
 - Issue Skeleton
 - Quick Triage
 - Facts / Guesses / Missing Info
@@ -59,37 +60,37 @@ The prompt stack is intentionally opinionated. New issues should always be outpu
 - Next Actions
 - Status Move
 
-## Included files
-- `AGENTS.md` — mandatory workflow and guardrails
-- `SOUL.md` — operating identity and principles
-- `IDENTITY.md` — role and tone metadata
-- `USER.md` — operator and environment customization
-- `TOOLS.md` — module/team/escalation mapping notes
-- `SKILL.md` — skill metadata and behavioral contract
-- `INSTALL.md` — setup and rollout notes
-- `references/tracker-workflow.md` — tracker-based operations
-- `references/log-only-workflow.md` — file-log-based operations
-- `references/learning-loop.md` — post-resolution quality improvement loop
-- `references/demo-script.md` — demo scenario script
+## 포함 파일
+- `AGENTS.md` — 필수 워크플로와 가드레일
+- `SOUL.md` — 운영 정체성과 원칙
+- `IDENTITY.md` — 역할 및 톤 메타데이터
+- `USER.md` — 운영자 및 환경 커스터마이징
+- `TOOLS.md` — 모듈/팀/에스컬레이션 매핑 메모
+- `SKILL.md` — 스킬 메타데이터와 행동 계약
+- `INSTALL.md` — 설정 및 배포 메모
+- `references/tracker-workflow.md` — 트래커 기반 운영
+- `references/log-only-workflow.md` — 파일 로그 기반 운영
+- `references/learning-loop.md` — 해결 후 품질 개선 루프
+- `references/demo-script.md` — 데모 시나리오 스크립트
 
-## HEARTBEAT.md: optional decision
-`HEARTBEAT.md` is **optional** in OpenClaw.
-- If `HEARTBEAT.md` is missing, heartbeat still runs and the model decides what to do.
-- If `HEARTBEAT.md` exists but is effectively empty, OpenClaw can skip the heartbeat run to save calls.
+## HEARTBEAT.md: 선택 사항
+`HEARTBEAT.md`는 OpenClaw에서 **선택 사항**이다.
+- `HEARTBEAT.md`가 없어도 heartbeat는 동작하며, 모델이 무엇을 할지 스스로 판단한다.
+- `HEARTBEAT.md`가 있지만 사실상 비어 있으면, OpenClaw는 호출 절약을 위해 heartbeat 실행을 건너뛸 수 있다.
 
-For this template, omission is acceptable by default. Add a small `HEARTBEAT.md` only when you want explicit periodic checklist behavior.
+이 템플릿에서는 기본적으로 생략해도 괜찮다. 명시적인 주기 체크리스트 동작이 필요할 때만 작은 `HEARTBEAT.md`를 추가한다.
 
-## Deployment checklist
-- Customize `USER.md` with operator name, timezone, and escalation expectations.
-- Customize `TOOLS.md` with real module names and owner/fallback mappings.
-- Map tracker states to `NEW/TRIAGED/ASSIGNED/RESOLVED`.
-- Define no-response timing thresholds (for example: 30m, 1h, 3h).
-- Define explicit human-confirmed recovery criteria for `RESOLVED`.
+## 배포 체크리스트
+- `USER.md`에 운영자 이름, 타임존, 에스컬레이션 기대치를 반영한다.
+- `TOOLS.md`에 실제 모듈 이름과 담당자/백업 매핑을 반영한다.
+- 트래커 상태를 `NEW/TRIAGED/ASSIGNED/RESOLVED`에 매핑한다.
+- 무응답 타이밍 기준(예: 30분, 1시간, 3시간)을 정한다.
+- `RESOLVED` 판정을 위한 명시적 인간 확인 기준을 정한다.
 
-## Suggested test prompts
+## 권장 테스트 프롬프트
 - `Customer reports payment captured but receipt confirmation is delayed by 20+ minutes.`
 - `A paid teammate still cannot access the workspace after invitation acceptance.`
 - `Customer asks how to change the billing email for invoices.`
 
-## License
+## 라이선스
 MIT
