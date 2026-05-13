@@ -11,7 +11,8 @@ from datetime import date
 
 ROOT = Path(__file__).resolve().parents[1]
 ENV_PATH = ROOT / '.env'
-STATE_PATH = ROOT / 'references' / 'notion-cs-knowledge.json'
+STATE_PATH = ROOT / 'state' / 'notion-cs-knowledge.json'
+CS_TOOL_STATE_PATH = ROOT / 'state' / 'cs-management-tool.json'
 NOTION_VERSION = '2022-06-28'
 
 
@@ -161,7 +162,7 @@ def seed(parent_page_id: str):
 
     intake = create_database(parent_page_id, 'CS Intake Queue', {
         'Title': {'title': {}},
-        'Status': {'select': {'options': [{'name': x} for x in ['new', 'processing', 'blocked', 'done']]}},
+        'Status': {'select': {'options': [{'name': x} for x in ['NEW', 'TRIAGED', 'ASSIGNED', 'PENDING', 'RESOLVED']]}},
         'Material URL': {'url': {}},
         'Material Type': {'select': {'options': [{'name': x} for x in ['MR', 'issue', 'doc', 'message', 'policy', 'other']]}},
         'Requested By': {'rich_text': {}},
@@ -177,6 +178,37 @@ def seed(parent_page_id: str):
         'intake_db_id': intake['id'],
     }
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2))
+    CS_TOOL_STATE_PATH.write_text(json.dumps({
+        'version': 1,
+        'active': {
+            'kind': 'notion',
+            'name': 'Optapex Manual',
+            'workspace': 'Optapex Manual',
+            'database': 'CS Intake Queue',
+            'sourceOfTruth': True,
+        },
+        'canonicalStatuses': ['NEW', 'TRIAGED', 'ASSIGNED', 'PENDING', 'RESOLVED'],
+        'providers': {
+            'notion': {
+                'databaseId': intake['id'],
+                'properties': {
+                    'title': 'Title',
+                    'status': 'Status',
+                    'notes': 'Notes',
+                    'requestedBy': 'Requested By',
+                    'createdAt': 'Created At',
+                    'materialUrl': 'Material URL'
+                },
+                'statusMapping': {
+                    'new': 'NEW',
+                    'triaged': 'TRIAGED',
+                    'assigned': 'ASSIGNED',
+                    'pending': 'PENDING',
+                    'resolved': 'RESOLVED'
+                }
+            }
+        }
+    }, ensure_ascii=False, indent=2))
     print(json.dumps(state, ensure_ascii=False, indent=2))
 
 

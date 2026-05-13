@@ -10,12 +10,14 @@ MOP 서비스 문의에는 사용하지 않는다.
 
 ## 기본 흐름
 1. 접수된 문의의 Skeleton을 확인한다.
-2. 답변 가능 여부를 찾는다.
-3. `Optapex Manual`의 Knowledge Map에서 질문 축을 찾는다.
-4. 연결된 실제 markdown 문서를 직접 읽는다.
-5. 필요하면 backlog를 확인한다.
-6. 답변 가능하면 채팅에 답변만 보낸다.
-7. 답변이 불가하면 `TRIAGED` 또는 `ASSIGNED`로 유지하고 다음 액션을 남긴다.
+2. 상태 추적/관리 맥락이면 먼저 `CS Management Tool`을 확인한다.
+3. 답변 가능 여부를 찾는다.
+4. `Optapex Manual`의 Knowledge Map에서 질문 축을 찾는다.
+5. 연결된 실제 markdown 문서를 직접 읽는다.
+6. 필요하면 backlog를 확인한다.
+7. 답변 가능하면 채팅에 답변만 보낸다.
+8. 답변만으로 문의가 닫히면 답변 직후 `RESOLVED`로 정리한다.
+9. 답변이 불가하면 `PENDING` 또는 `ASSIGNED`로 유지하고 다음 액션을 남긴다.
 
 ## 답변 원칙
 - 인덱스만 보고 답하지 않는다.
@@ -34,15 +36,22 @@ MOP 서비스 문의에는 사용하지 않는다.
 - 시작: `NEW`
 - 답변 탐색 시작 가능: `TRIAGED`
 - 사람/엔지니어 후속 필요: `ASSIGNED`
-- 명시적 해결 확인: `RESOLVED`
+- 추가 확인 필요: `PENDING`
+- 답변만으로 종료 가능하거나 종결 확인 완료: `RESOLVED`
 
 새 상태를 만들지 않는다.
+
+## CS 관리 도구
+- 현재 활성 CS 관리 도구는 `Notion / Optapex Manual / CS Intake Queue` 다.
+- heartbeat, 열린 이슈 확인, 상태 요약은 이 도구를 먼저 본다.
+- provider 설정과 migration 포인트는 `state/cs-management-tool.json`을 기준으로 관리한다.
 
 ## 참고 문서
 - 답변 워크플로: `AGENTS.md`
 - 운영 성향: `SOUL.md`
-- 전용 운영 플로우: `references/optapex-cs-operating-flow.md`
-- 답변 규칙: `references/cs-answering-workflow.md`
-- Notion 구조: `references/notion-knowledge-model.md`
-- 지식 시드: `references/optapex-help-center-seed.md`
-- backlog 원문: `file:///Users/yong/.openclaw/media/inbound/03_optapex_backlog---c5977569-a77f-4065-8f20-5d2d982c25a6.md`
+- 설계/수정 맥락 구분: `references/little-j-maintenance-mode.md`
+- CS 관리 도구 계약: `references/cs-management-tool.md`
+- source 선택 규칙: `references/optapex-source-routing.md`
+- help-center 질문 축: `references/optapex-help-center-taxonomy.md`
+- backlog 원문: `file:///Users/yong/.openclaw/workspace-cs-agent/knowledge/03_optapex_backlog.md`
+- canonical workspace skill: `skills/optapex-cs-answer/SKILL.md`

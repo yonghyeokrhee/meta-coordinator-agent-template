@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "active": {
+    "kind": "notion",
+    "name": "Optapex Manual",
+    "workspace": "Optapex Manual",
+    "database": "CS Intake Queue",
+    "sourceOfTruth": true
+  },
+  "canonicalStatuses": [
+    "NEW",
+    "TRIAGED",
+    "ASSIGNED",
+    "PENDING",
+    "RESOLVED"
+  ],
+  "providers": {
+    "notion": {
+      "databaseId": "35edbb5b-6eb1-81fe-b712-d7e473b7cf43",
+      "properties": {
+        "title": "Title",
+        "status": "Status",
+        "notes": "Notes",
+        "requestedBy": "Requested By",
+        "createdAt": "Created At",
+        "materialUrl": "Material URL"
+      },
+      "statusMapping": {
+        "new": "NEW",
+        "triaged": "TRIAGED",
+        "assigned": "ASSIGNED",
+        "pending": "PENDING",
+        "resolved": "RESOLVED",
+        "processing": "TRIAGED",
+        "blocked": "PENDING",
+        "done": "RESOLVED"
+      }
+    }
+  }
+}
