@@ -5,6 +5,7 @@ import argparse
 import json
 import os
 import sys
+from datetime import datetime
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -53,6 +54,27 @@ def notion_request(method: str, path: str, payload: dict | None = None):
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors='replace')
         raise SystemExit(f'Notion API error {e.code}: {body}')
+
+
+def rich_text(text: str):
+    if not text:
+        return []
+    return [
+        {'type': 'text', 'text': {'content': part}}
+        for part in [text[i:i+1800] for i in range(0, len(text), 1800)]
+    ]
+
+
+def rich_prop(text: str):
+    return {'rich_text': rich_text(text)}
+
+
+def select_prop(value: str | None):
+    return {'select': {'name': value}} if value else {'select': None}
+
+
+def notion_update_page(page_id: str, properties: dict):
+    return notion_request('PATCH', f'/pages/{page_id}', {'properties': properties})
 
 
 def get_plain_text(prop: dict | None) -> str:
@@ -130,6 +152,42 @@ def open_cases(cases: list[dict]) -> list[dict]:
     return [c for c in cases if c.get('status') != 'RESOLVED']
 
 
+def append_note(existing: str, addition: str) -> str:
+    existing = (existing or '').strip()
+    addition = (addition or '').strip()
+    if not existing:
+        return addition
+    if not addition:
+        return existing
+    return f'{existing}\n\n{addition}'
+
+
+def update_case_status(case_id: str, status: str):
+    config = load_config()
+    notion = config['providers']['notion']
+    props = notion['properties']
+    if config['active']['kind'] != 'notion':
+        raise SystemExit('unsupported CS management provider for update-status')
+    return notion_update_page(case_id, {props['status']: select_prop(status)})
+
+
+def add_answer_record(case_id: str, answer_note: str, next_status: str | None = None):
+    config = load_config()
+    notion = config['providers']['notion']
+    props = notion['properties']
+    cases = fetch_cases(200)
+    target = next((c for c in cases if c['id'] == case_id), None)
+    if not target:
+        raise SystemExit(f'case not found: {case_id}')
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M')
+    record = f'[Answer Record {timestamp}] {answer_note}'
+    merged_notes = append_note(target.get('notes', ''), record)
+    properties = {props['notes']: rich_prop(merged_notes)}
+    if next_status:
+        properties[props['status']] = select_prop(next_status)
+    return notion_update_page(case_id, properties)
+
+
 def cmd_list_open(args):
     cases = open_cases(fetch_cases(args.limit))
     print(json.dumps(cases, ensure_ascii=False, indent=2))
@@ -150,6 +208,16 @@ def cmd_summary(_args):
     }, ensure_ascii=False, indent=2))
 
 
+def cmd_update_status(args):
+    update_case_status(args.case_id, args.status)
+    print(json.dumps({'ok': True, 'caseId': args.case_id, 'status': args.status}, ensure_ascii=False, indent=2))
+
+
+def cmd_add_answer_record(args):
+    add_answer_record(args.case_id, args.note, args.status)
+    print(json.dumps({'ok': True, 'caseId': args.case_id, 'status': args.status or None}, ensure_ascii=False, indent=2))
+
+
 def main():
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest='cmd', required=True)
@@ -160,6 +228,17 @@ def main():
 
     p = sub.add_parser('summary')
     p.set_defaults(func=cmd_summary)
+
+    p = sub.add_parser('update-status')
+    p.add_argument('--case-id', required=True)
+    p.add_argument('--status', required=True, choices=['NEW', 'TRIAGED', 'ASSIGNED', 'PENDING', 'RESOLVED'])
+    p.set_defaults(func=cmd_update_status)
+
+    p = sub.add_parser('add-answer-record')
+    p.add_argument('--case-id', required=True)
+    p.add_argument('--note', required=True)
+    p.add_argument('--status', choices=['NEW', 'TRIAGED', 'ASSIGNED', 'PENDING', 'RESOLVED'])
+    p.set_defaults(func=cmd_add_answer_record)
 
     args = parser.parse_args()
     args.func(args)

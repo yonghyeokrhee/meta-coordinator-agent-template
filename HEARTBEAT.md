@@ -1,10 +1,36 @@
 # HEARTBEAT
 
-- 매 1시간마다 `RESOLVED`가 아닌 상태의 CS 이슈가 있는지 확인한다.
-- 상태 확인은 최근 채팅이나 세션 로그가 아니라 활성 `CS Management Tool` 기준으로 수행한다.
-- 현재 활성 도구는 `Notion / Optapex Manual / CS Intake Queue` 다.
-- 가능하면 먼저 `python3 scripts/cs_management.py summary`로 열린 이슈를 조회한다.
-- 열린 이슈가 있으면 현재 상태와 가장 가까운 다음 액션만 짧게 정리한다.
-- 이 Discord 채널에는 반드시 `message(action=send)`로 visible update를 보낸다.
-- 열린 이슈가 없으면 `message(action=send)`로 `현재 열린 CS 이슈 없음. 모두 resolved 상태입니다.` 라고 보낸다.
-- 실제로 알릴 내용이 없을 때만 `HEARTBEAT_OK`로 끝낸다.
+이 heartbeat의 목적은 **현재 CS 상태를 사용자에게 1시간마다 요약해서 알리는 것**이다.
+
+반드시 아래 순서를 그대로 따른다.
+
+1. 먼저 활성 `CS Management Tool`을 기준으로 상태를 조회한다.
+   - 현재 기준 source of truth는 `Notion / Optapex Manual / CS Intake Queue` 다.
+   - 최근 채팅, 세션 로그, 기억, 추정으로 상태를 대신 판단하지 않는다.
+
+2. 반드시 아래 명령을 직접 실행해서 열린 이슈를 조회한다.
+   - `python3 scripts/cs_management.py summary`
+   - 이 단계는 선택 사항이 아니다.
+   - heartbeat 상태 판단은 이 스크립트 실행 결과와 분리되면 안 된다.
+
+3. 스크립트 결과를 기준으로 `RESOLVED`가 아닌 케이스만 열린 이슈로 본다.
+   - `openCount = 0` 이면 열린 CS 이슈가 없는 상태다.
+   - `openCases` 가 있으면 각 케이스의 `status`, `title`, `notes`를 보고 가장 가까운 다음 액션만 짧게 정리한다.
+   - `PENDING` 상태가 있으면 반드시 담당자에게 `RESOLVED 여부 확인 필요`라는 다음 액션을 넣는다.
+
+4. 이 Discord 채널에 반드시 `message(action=send)`로 visible update를 보낸다.
+   - 열린 이슈가 없으면 정확히 아래 문구를 보낸다.
+     - `현재 열린 CS 이슈 없음. 모두 resolved 상태입니다.`
+   - 열린 이슈가 있으면 아래 형식으로 짧게 요약한다.
+     - 기준 source of truth
+     - 현재 열린 CS 이슈 수
+     - status별 개수
+     - 각 이슈의 제목 / 현재 status / 가장 가까운 다음 액션
+   - `PENDING` 이슈는 다음 액션에 담당자 확인 요청을 반드시 포함한다.
+
+5. 스크립트 실행이 실패하면 조용히 넘어가지 않는다.
+   - 실패 사실을 이 채널에 visible update로 알린다.
+   - 실패 메시지에는 `CS Intake Queue 상태 조회 실패`와 다음 확인 액션을 포함한다.
+
+6. 실제로 보낼 visible update가 전혀 없을 때만 `HEARTBEAT_OK`로 끝낸다.
+   - 일반적인 경우에는 상태 요약 메시지를 보내고 끝낸다.
