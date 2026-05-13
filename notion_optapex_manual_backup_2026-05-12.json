@@ -1,0 +1,3688 @@
+{
+  "root_children": [
+    {
+      "object": "block",
+      "id": "35cdbb5b-6eb1-80d7-a5fe-d33cfd744a25",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35cdbb5b-6eb1-802c-affb-c23ce6690010"
+      },
+      "created_time": "2026-05-10T13:31:00.000Z",
+      "last_edited_time": "2026-05-10T13:31:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "48ff6ac5-e222-498b-8a22-bc366e711e8b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "48ff6ac5-e222-498b-8a22-bc366e711e8b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35cdbb5b-6eb1-802c-affb-c23ce6690010"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "child_page",
+      "child_page": {
+        "title": "CS Knowledge Hub"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81c4-90fa-d66875e82b0e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35cdbb5b-6eb1-802c-affb-c23ce6690010"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "child_database",
+      "child_database": {
+        "title": "CS Knowledge Sources"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-8162-b075-c865426b2209",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35cdbb5b-6eb1-802c-affb-c23ce6690010"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "child_database",
+      "child_database": {
+        "title": "CS Answer Cards"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81fe-b712-d7e473b7cf43",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35cdbb5b-6eb1-802c-affb-c23ce6690010"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "child_database",
+      "child_database": {
+        "title": "CS Intake Queue"
+      },
+      "archived": false
+    }
+  ],
+  "hub_children": [
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81eb-a593-c184fa50393e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CS Knowledge Hub",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CS Knowledge Hub",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81e1-a140-f6fae6df4b5e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CS 응답용 검증 지식과 재사용 가능한 답변 카드를 이곳에서 관리한다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CS 응답용 검증 지식과 재사용 가능한 답변 카드를 이곳에서 관리한다.",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81ba-96d0-ce75a6d43301",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "운영 순서",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "운영 순서",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-8130-9e92-c6b79474c039",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "신규 material은 먼저 CS Intake Queue에 넣는다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "신규 material은 먼저 CS Intake Queue에 넣는다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-8152-93ec-dcb29129b9e6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "핵심 근거를 CS Knowledge Sources로 정리한다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "핵심 근거를 CS Knowledge Sources로 정리한다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81f3-bf7a-ec8ac32879f4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "고객 응답용 문장으로 다듬어 CS Answer Cards를 만든다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "고객 응답용 문장으로 다듬어 CS Answer Cards를 만든다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81a5-ab35-f9889d6bf3a8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "인덱스 축",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "인덱스 축",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-815a-acdd-f0d52e52cbe3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "계정/권한",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "계정/권한",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-8188-9d45-f0c1cae2e81f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "결제/구독",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "결제/구독",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-8141-bdd9-cf3ae16b8fe8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "데이터 연동",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "데이터 연동",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81e3-b8e7-c0babe7837ee",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "리포트/집계",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "리포트/집계",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-8127-954d-e4d51f566563",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "광고 운영/자동화",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "광고 운영/자동화",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-81c5-96df-f0ccdf6f6125",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "장애/지연/정합성",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "장애/지연/정합성",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "35edbb5b-6eb1-817e-9d3a-eb1d332915bd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "35edbb5b-6eb1-8139-8d1a-dd015aa4339e"
+      },
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "정책/제한사항",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "정책/제한사항",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "source_rows": [
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-810b-a818-c0f060e685ee",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-81c4-90fa-d66875e82b0e"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Feature / Module": {
+          "id": "%3C%5BQv",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "267e22f3-276a-410c-969b-85fa6b42c718",
+              "name": "Optimization Set",
+              "color": "blue"
+            },
+            {
+              "id": "48671567-8455-40d9-9f60-6f8b2565695a",
+              "name": "Budget Simulator",
+              "color": "green"
+            },
+            {
+              "id": "7e7c20b3-fa64-42d4-8f8f-80b602e15661",
+              "name": "Best Practices",
+              "color": "orange"
+            }
+          ]
+        },
+        "Source URL": {
+          "id": "BHEy",
+          "type": "url",
+          "url": "https://agricultural-hoverfly.super.site/krlg-optapex-help-center/manage-optimization-kr"
+        },
+        "Owner": {
+          "id": "Gpnb",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Source Type": {
+          "id": "J%60VF",
+          "type": "select",
+          "select": {
+            "id": "d380e76b-28a7-4123-ba2b-5db24e43b63d",
+            "name": "doc",
+            "color": "default"
+          }
+        },
+        "Last Reviewed": {
+          "id": "Uc%7Cb",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Product Area": {
+          "id": "X~%5EG",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d9b4e0ed-428d-4a0d-b454-4c4ee6837dd0",
+              "name": "Optimization",
+              "color": "green"
+            },
+            {
+              "id": "faa86550-b968-41b7-97a9-16ed7984a7b9",
+              "name": "Budget",
+              "color": "brown"
+            }
+          ]
+        },
+        "Summary": {
+          "id": "YWeF",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Optimization Set은 주기 점검이 필요한 운영 단위다. 예산은 너무 타이트하게 두기보다 충분히 두는 것이 권장되며, 2주 단위 리뷰가 이상적이다. 매출 목표와 이익 목표를 혼합해 운영해야 한다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Optimization Set은 주기 점검이 필요한 운영 단위다. 예산은 너무 타이트하게 두기보다 충분히 두는 것이 권장되며, 2주 단위 리뷰가 이상적이다. 매출 목표와 이익 목표를 혼합해 운영해야 한다.",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "%5C%3BI%5E",
+          "type": "select",
+          "select": {
+            "id": "b898dcd9-4807-4810-8eeb-f1cc7c773a0c",
+            "name": "distilled",
+            "color": "default"
+          }
+        },
+        "Customer Impact": {
+          "id": "bU%3D%3A",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "Keywords": {
+          "id": "f%7DVU",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "e75812ed-ca73-482e-b1fa-37b5db137197",
+              "name": "optimization set",
+              "color": "blue"
+            },
+            {
+              "id": "ebf56017-adf5-4471-8fb1-4f57ee9f4098",
+              "name": "budget",
+              "color": "yellow"
+            },
+            {
+              "id": "87722142-6326-4669-97f3-cdd03e81261a",
+              "name": "2 week review",
+              "color": "pink"
+            },
+            {
+              "id": "cfff0319-b005-4681-98c7-03f3dac53a39",
+              "name": "goal mix",
+              "color": "blue"
+            },
+            {
+              "id": "d1c0115d-e9bf-4031-992d-2eaff0479b94",
+              "name": "budget simulator",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Confidence": {
+          "id": "kNra",
+          "type": "select",
+          "select": {
+            "id": "cd44216b-1b90-4e73-b52a-7b6150fd63b6",
+            "name": "high",
+            "color": "default"
+          }
+        },
+        "CS Notes": {
+          "id": "znhC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Budget Simulator와 예산 모니터링 관련 문의의 기본 근거.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Budget Simulator와 예산 모니터링 관련 문의의 기본 근거.",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Optapex Optimization Set Management Basics",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Optapex Optimization Set Management Basics",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Optapex-Optimization-Set-Management-Basics-35edbb5b6eb1810ba818c0f060e685ee",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-81ee-b63d-f7684ff15136",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-81c4-90fa-d66875e82b0e"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Feature / Module": {
+          "id": "%3C%5BQv",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "55f8d7d1-349d-48c2-95e6-636a056a7bd0",
+              "name": "Plan",
+              "color": "purple"
+            },
+            {
+              "id": "08e5f0bd-5efd-42a0-9b50-edb1dd98ed1d",
+              "name": "Payment",
+              "color": "blue"
+            },
+            {
+              "id": "d7b58975-faf0-44d4-8501-cacbc17acec6",
+              "name": "Upgrade",
+              "color": "yellow"
+            },
+            {
+              "id": "bd0c1e8d-69cb-475e-8172-374e49073f55",
+              "name": "Downgrade",
+              "color": "orange"
+            },
+            {
+              "id": "42244215-92f5-4539-a34f-f4d03ee9ea48",
+              "name": "Cancellation",
+              "color": "green"
+            }
+          ]
+        },
+        "Source URL": {
+          "id": "BHEy",
+          "type": "url",
+          "url": "https://agricultural-hoverfly.super.site/krlg-optapex-help-center/account-subscription-overview-kr/manage-billing-subscription"
+        },
+        "Owner": {
+          "id": "Gpnb",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Source Type": {
+          "id": "J%60VF",
+          "type": "select",
+          "select": {
+            "id": "d380e76b-28a7-4123-ba2b-5db24e43b63d",
+            "name": "doc",
+            "color": "default"
+          }
+        },
+        "Last Reviewed": {
+          "id": "Uc%7Cb",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Product Area": {
+          "id": "X~%5EG",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "18d52b3e-ac42-46e4-bf9c-acf9d444f003",
+              "name": "Billing",
+              "color": "yellow"
+            },
+            {
+              "id": "f70253fb-49f7-499e-8fdd-2f87f48c3762",
+              "name": "Subscription",
+              "color": "default"
+            }
+          ]
+        },
+        "Summary": {
+          "id": "YWeF",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "월간/연간 결제를 지원하며 업그레이드/다운그레이드/해지 규칙이 다르다. 월간 업그레이드는 즉시, 월간 다운그레이드/해지는 다음 주기부터 적용. 연간 해지는 미사용 개월 환불 가능하나 할인분 제외와 10% 조기 해지 수수료가 있다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "월간/연간 결제를 지원하며 업그레이드/다운그레이드/해지 규칙이 다르다. 월간 업그레이드는 즉시, 월간 다운그레이드/해지는 다음 주기부터 적용. 연간 해지는 미사용 개월 환불 가능하나 할인분 제외와 10% 조기 해지 수수료가 있다.",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "%5C%3BI%5E",
+          "type": "select",
+          "select": {
+            "id": "b898dcd9-4807-4810-8eeb-f1cc7c773a0c",
+            "name": "distilled",
+            "color": "default"
+          }
+        },
+        "Customer Impact": {
+          "id": "bU%3D%3A",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "Keywords": {
+          "id": "f%7DVU",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "ffd50a43-13c4-4498-addd-965773d805d4",
+              "name": "monthly",
+              "color": "yellow"
+            },
+            {
+              "id": "bfc83582-c889-4b27-b145-40808ee0266f",
+              "name": "annual",
+              "color": "orange"
+            },
+            {
+              "id": "b0ac8a83-9f3f-4d02-a06b-6880ef86cc7a",
+              "name": "upgrade",
+              "color": "green"
+            },
+            {
+              "id": "b1f72e67-3b7c-47c0-9fcc-3bac89f7a9e2",
+              "name": "downgrade",
+              "color": "orange"
+            },
+            {
+              "id": "1e6c3b96-afde-4fea-83e7-48a47c2bcb81",
+              "name": "cancellation",
+              "color": "brown"
+            },
+            {
+              "id": "4be205fe-cd66-4d45-8db0-50a47f86449d",
+              "name": "refund",
+              "color": "red"
+            },
+            {
+              "id": "0df79a00-dd18-45b1-9706-d167bd53a84e",
+              "name": "billing",
+              "color": "blue"
+            }
+          ]
+        },
+        "Confidence": {
+          "id": "kNra",
+          "type": "select",
+          "select": {
+            "id": "cd44216b-1b90-4e73-b52a-7b6150fd63b6",
+            "name": "high",
+            "color": "default"
+          }
+        },
+        "CS Notes": {
+          "id": "znhC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "월간 환불 불가, 결제 실패 지속 시 최적화 기능 중단 가능, 모든 변경은 LG CNS 검증 절차를 거침.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "월간 환불 불가, 결제 실패 지속 시 최적화 기능 중단 가능, 모든 변경은 LG CNS 검증 절차를 거침.",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Optapex Billing & Subscription Policy",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Optapex Billing & Subscription Policy",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Optapex-Billing-Subscription-Policy-35edbb5b6eb181eeb63df7684ff15136",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-81b2-8279-e6d07f97b867",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-81c4-90fa-d66875e82b0e"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Feature / Module": {
+          "id": "%3C%5BQv",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "92f0ccf3-a656-48a7-8ef7-52e6e78b590e",
+              "name": "Reports",
+              "color": "orange"
+            },
+            {
+              "id": "beebac1f-c63a-435b-9178-96aa4283428d",
+              "name": "Real-Time Dashboard",
+              "color": "pink"
+            },
+            {
+              "id": "50321e49-302f-46d0-9357-1d779132dc5a",
+              "name": "Downloads",
+              "color": "brown"
+            }
+          ]
+        },
+        "Source URL": {
+          "id": "BHEy",
+          "type": "url",
+          "url": "https://agricultural-hoverfly.super.site/krlg-optapex-help-center/reports-overview-kr"
+        },
+        "Owner": {
+          "id": "Gpnb",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Source Type": {
+          "id": "J%60VF",
+          "type": "select",
+          "select": {
+            "id": "d380e76b-28a7-4123-ba2b-5db24e43b63d",
+            "name": "doc",
+            "color": "default"
+          }
+        },
+        "Last Reviewed": {
+          "id": "Uc%7Cb",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Product Area": {
+          "id": "X~%5EG",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "0531dea8-5b5d-4758-8a66-440131a05681",
+              "name": "Reporting",
+              "color": "orange"
+            },
+            {
+              "id": "2e37f300-40cf-4871-b3ad-cc527ea9110c",
+              "name": "Dashboard",
+              "color": "red"
+            }
+          ]
+        },
+        "Summary": {
+          "id": "YWeF",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Reports는 Product/Brand 리포트로 구성되며, Real-Time Dashboard는 시간 단위 성과와 pacing을 제공한다. Reports와 Real-Time 간 숫자 차이는 반품 반영, Amazon 데이터 보정(최대 72시간), 갱신 주기 차이로 발생할 수 있다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Reports는 Product/Brand 리포트로 구성되며, Real-Time Dashboard는 시간 단위 성과와 pacing을 제공한다. Reports와 Real-Time 간 숫자 차이는 반품 반영, Amazon 데이터 보정(최대 72시간), 갱신 주기 차이로 발생할 수 있다.",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "%5C%3BI%5E",
+          "type": "select",
+          "select": {
+            "id": "b898dcd9-4807-4810-8eeb-f1cc7c773a0c",
+            "name": "distilled",
+            "color": "default"
+          }
+        },
+        "Customer Impact": {
+          "id": "bU%3D%3A",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "Keywords": {
+          "id": "f%7DVU",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "e3db8508-8be0-4c30-9f66-1dedf7e4a4ad",
+              "name": "reports",
+              "color": "green"
+            },
+            {
+              "id": "1c2ba82f-ffa9-41ac-8b0d-81ec7a8eed0b",
+              "name": "realtime",
+              "color": "brown"
+            },
+            {
+              "id": "5a921603-87c7-42e0-81f1-80f01374052a",
+              "name": "data discrepancy",
+              "color": "default"
+            },
+            {
+              "id": "a7d7acc2-bc86-4478-a947-2e77613b8544",
+              "name": "returns",
+              "color": "brown"
+            },
+            {
+              "id": "a9a42fbe-bc0e-40d4-9193-a9c7ef6e2589",
+              "name": "72 hours correction",
+              "color": "orange"
+            },
+            {
+              "id": "79d22dc7-8793-4528-826b-cedf8dac1387",
+              "name": "1 hour update",
+              "color": "purple"
+            },
+            {
+              "id": "ed4dd21c-8210-4960-b57a-c37d934134a2",
+              "name": "downloads",
+              "color": "brown"
+            }
+          ]
+        },
+        "Confidence": {
+          "id": "kNra",
+          "type": "select",
+          "select": {
+            "id": "cd44216b-1b90-4e73-b52a-7b6150fd63b6",
+            "name": "high",
+            "color": "default"
+          }
+        },
+        "CS Notes": {
+          "id": "znhC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "숫자 불일치 문의, 시간대별 성과 조회, 7일 이전 시간대 데이터는 Downloads 사용 안내에 활용.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "숫자 불일치 문의, 시간대별 성과 조회, 7일 이전 시간대 데이터는 Downloads 사용 안내에 활용.",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Optapex Reports & Real-Time Dashboard",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Optapex Reports & Real-Time Dashboard",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Optapex-Reports-Real-Time-Dashboard-35edbb5b6eb181b28279e6d07f97b867",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-81cf-846b-e7e1d54f84d7",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-81c4-90fa-d66875e82b0e"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Feature / Module": {
+          "id": "%3C%5BQv",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "a7257b7f-5d3a-43be-a115-924d26937af3",
+              "name": "Amazon Connection",
+              "color": "default"
+            },
+            {
+              "id": "7a2efb87-c403-4380-833c-bb0bf5175bc7",
+              "name": "Trial",
+              "color": "green"
+            }
+          ]
+        },
+        "Source URL": {
+          "id": "BHEy",
+          "type": "url",
+          "url": "https://agricultural-hoverfly.super.site/krlg-optapex-help-center/introduce-kr"
+        },
+        "Owner": {
+          "id": "Gpnb",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Source Type": {
+          "id": "J%60VF",
+          "type": "select",
+          "select": {
+            "id": "d380e76b-28a7-4123-ba2b-5db24e43b63d",
+            "name": "doc",
+            "color": "default"
+          }
+        },
+        "Last Reviewed": {
+          "id": "Uc%7Cb",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Product Area": {
+          "id": "X~%5EG",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4a60b0ee-c768-4632-9afd-171180548031",
+              "name": "Onboarding",
+              "color": "gray"
+            },
+            {
+              "id": "263ce3e2-160d-4fc8-82fe-402e70d96eb4",
+              "name": "Account",
+              "color": "blue"
+            }
+          ]
+        },
+        "Summary": {
+          "id": "YWeF",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Amazon Ads Console + Seller/Vendor Central 연결, 최소 Editor 권한, 지역별 연결, Trial 활성화 후 최대 72시간 데이터 수집, 기본 90일 과거 데이터 수집 규칙을 안내함.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Amazon Ads Console + Seller/Vendor Central 연결, 최소 Editor 권한, 지역별 연결, Trial 활성화 후 최대 72시간 데이터 수집, 기본 90일 과거 데이터 수집 규칙을 안내함.",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "%5C%3BI%5E",
+          "type": "select",
+          "select": {
+            "id": "b898dcd9-4807-4810-8eeb-f1cc7c773a0c",
+            "name": "distilled",
+            "color": "default"
+          }
+        },
+        "Customer Impact": {
+          "id": "bU%3D%3A",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "Keywords": {
+          "id": "f%7DVU",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "7739fef2-ea3a-4e7b-b375-3e2cfafc8b0a",
+              "name": "amazon connection",
+              "color": "yellow"
+            },
+            {
+              "id": "24dfa2af-224e-4261-9a42-1965e02e25b4",
+              "name": "editor permission",
+              "color": "gray"
+            },
+            {
+              "id": "16643885-1c08-4f75-9463-29730728c33d",
+              "name": "trial",
+              "color": "purple"
+            },
+            {
+              "id": "7db10ad9-1028-414f-a030-298268fbe6fa",
+              "name": "72 hours",
+              "color": "green"
+            },
+            {
+              "id": "190b42be-f30f-4dbf-82ec-0fd413aec250",
+              "name": "90 days",
+              "color": "default"
+            },
+            {
+              "id": "a7a8bb98-42b3-4c6d-8ba0-ffbe4078cf38",
+              "name": "multi account",
+              "color": "default"
+            }
+          ]
+        },
+        "Confidence": {
+          "id": "kNra",
+          "type": "select",
+          "select": {
+            "id": "cd44216b-1b90-4e73-b52a-7b6150fd63b6",
+            "name": "high",
+            "color": "default"
+          }
+        },
+        "CS Notes": {
+          "id": "znhC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "초기 수집 지연 문의에 대한 1차 근거. Brand Protection은 최소 1주, Budget Simulator는 14일+최적화 상태 필요.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "초기 수집 지연 문의에 대한 1차 근거. Brand Protection은 최소 1주, Budget Simulator는 14일+최적화 상태 필요.",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Optapex Onboarding - Amazon 연결 및 Trial",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Optapex Onboarding - Amazon 연결 및 Trial",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Optapex-Onboarding-Amazon-Trial-35edbb5b6eb181cf846be7e1d54f84d7",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-81df-bddb-f44aebc380d3",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-81c4-90fa-d66875e82b0e"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Feature / Module": {
+          "id": "%3C%5BQv",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "16366ec0-ecd4-4053-84d3-d05f675c8909",
+              "name": "Documentation",
+              "color": "red"
+            },
+            {
+              "id": "7f2c2e87-a191-4681-a549-1a1ba010a2f6",
+              "name": "CS",
+              "color": "gray"
+            }
+          ]
+        },
+        "Source URL": {
+          "id": "BHEy",
+          "type": "url",
+          "url": "https://agricultural-hoverfly.super.site/krlg-optapex-help-center"
+        },
+        "Owner": {
+          "id": "Gpnb",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Source Type": {
+          "id": "J%60VF",
+          "type": "select",
+          "select": {
+            "id": "d380e76b-28a7-4123-ba2b-5db24e43b63d",
+            "name": "doc",
+            "color": "default"
+          }
+        },
+        "Last Reviewed": {
+          "id": "Uc%7Cb",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Product Area": {
+          "id": "X~%5EG",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "1ad1865b-ebd9-42dd-93a6-577c088e1b6b",
+              "name": "Help Center",
+              "color": "purple"
+            },
+            {
+              "id": "c297e417-da52-4f1c-a3a9-f0cc8695bc0f",
+              "name": "Optapex",
+              "color": "pink"
+            }
+          ]
+        },
+        "Summary": {
+          "id": "YWeF",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Optapex Help Center의 최상위 인덱스. 시작하기, 최적화, 리포트, 브랜드 보호, 실시간 대시보드, 다운로드, 계정 관리로 탐색 축이 정리되어 있음.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Optapex Help Center의 최상위 인덱스. 시작하기, 최적화, 리포트, 브랜드 보호, 실시간 대시보드, 다운로드, 계정 관리로 탐색 축이 정리되어 있음.",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "%5C%3BI%5E",
+          "type": "select",
+          "select": {
+            "id": "b898dcd9-4807-4810-8eeb-f1cc7c773a0c",
+            "name": "distilled",
+            "color": "default"
+          }
+        },
+        "Customer Impact": {
+          "id": "bU%3D%3A",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "Keywords": {
+          "id": "f%7DVU",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "e202a174-551c-42e8-b4c7-46ec9a056075",
+              "name": "help center",
+              "color": "blue"
+            },
+            {
+              "id": "a169ebd8-8aae-4d41-8033-c36212409d3f",
+              "name": "quick start",
+              "color": "brown"
+            },
+            {
+              "id": "5996f848-d008-4e88-adf2-563ce61bca8b",
+              "name": "features",
+              "color": "orange"
+            },
+            {
+              "id": "8d452590-1c2c-4f44-a518-b24ae59f2b69",
+              "name": "announcements",
+              "color": "red"
+            },
+            {
+              "id": "befe509a-39b3-443f-91b1-497c4cedea91",
+              "name": "index",
+              "color": "pink"
+            }
+          ]
+        },
+        "Confidence": {
+          "id": "kNra",
+          "type": "select",
+          "select": {
+            "id": "cd44216b-1b90-4e73-b52a-7b6150fd63b6",
+            "name": "high",
+            "color": "default"
+          }
+        },
+        "CS Notes": {
+          "id": "znhC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "CS 인덱스 설계의 기준 소스. 고객 질문 기준의 상위 카테고리 설계에 사용.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "CS 인덱스 설계의 기준 소스. 고객 질문 기준의 상위 카테고리 설계에 사용.",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Optapex Help Center - Root Index",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Optapex Help Center - Root Index",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Optapex-Help-Center-Root-Index-35edbb5b6eb181dfbddbf44aebc380d3",
+      "public_url": null,
+      "archived": false
+    }
+  ],
+  "answer_rows": [
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-81ca-b576-e747eef806da",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-8162-b075-c865426b2209"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Answer TL;DR": {
+          "id": "M%5D_J",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Real-Time Dashboard에서는 최근 7일 기준의 시간대별 성과 확인에 초점이 맞춰져 있습니다. 7일 이전의 시간대별 데이터를 분석하려면 Downloads 메뉴에서 리포트를 내려받아 확인하는 것이 권장됩니다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Real-Time Dashboard에서는 최근 7일 기준의 시간대별 성과 확인에 초점이 맞춰져 있습니다. 7일 이전의 시간대별 데이터를 분석하려면 Downloads 메뉴에서 리포트를 내려받아 확인하는 것이 권장됩니다.",
+              "href": null
+            }
+          ]
+        },
+        "Keywords": {
+          "id": "QmNx",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4dc5d709-dbec-4475-84b2-a58440219b38",
+              "name": "downloads",
+              "color": "brown"
+            },
+            {
+              "id": "afb2ce20-79f0-4273-8887-872df92dd818",
+              "name": "hourly data",
+              "color": "green"
+            },
+            {
+              "id": "a4552576-05d3-4282-9753-47d0ae044d1c",
+              "name": "7 days",
+              "color": "gray"
+            },
+            {
+              "id": "539bd740-fe50-433b-bf11-545b298cea37",
+              "name": "consolidated report",
+              "color": "brown"
+            }
+          ]
+        },
+        "When to Use": {
+          "id": "dHPG",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "장기 시간대별 성과, 원본/통합 리포트 다운로드 문의",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "장기 시간대별 성과, 원본/통합 리포트 다운로드 문의",
+              "href": null
+            }
+          ]
+        },
+        "Topic": {
+          "id": "eE%5Be",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "f4146b96-0852-418b-83ef-9d48ae05e445",
+              "name": "Downloads",
+              "color": "blue"
+            },
+            {
+              "id": "c3029703-642e-4ac0-b25e-33e5e9bfb361",
+              "name": "Real-Time Dashboard",
+              "color": "orange"
+            },
+            {
+              "id": "7737bcd0-0181-4a9f-a22b-610c9261a4fc",
+              "name": "Reporting",
+              "color": "purple"
+            }
+          ]
+        },
+        "Audience": {
+          "id": "kHP%7D",
+          "type": "select",
+          "select": {
+            "id": "86d46269-9e7f-466e-917d-22cb562a9c83",
+            "name": "both",
+            "color": "default"
+          }
+        },
+        "Last Updated": {
+          "id": "ohxu",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Do Not Say": {
+          "id": "pNLc",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "실시간 대시보드만으로 모든 장기 시간대 데이터를 직접 제공한다고 안내하지 말 것",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "실시간 대시보드만으로 모든 장기 시간대 데이터를 직접 제공한다고 안내하지 말 것",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "r%7CI%3D",
+          "type": "select",
+          "select": {
+            "id": "23b6b248-30e8-4001-9b04-1f1e5d83ca49",
+            "name": "ready",
+            "color": "default"
+          }
+        },
+        "Source Links": {
+          "id": "zP%3Ei",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Real-Time Dashboard KR / Downloads Overview KR",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Real-Time Dashboard KR / Downloads Overview KR",
+              "href": null
+            }
+          ]
+        },
+        "Escalate If": {
+          "id": "%7Dp%3FB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "다운로드 자체가 실패하거나 필요한 리포트가 생성되지 않을 때",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "다운로드 자체가 실패하거나 필요한 리포트가 생성되지 않을 때",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "7일 이전 시간대별 성과를 보고 싶을 때",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "7일 이전 시간대별 성과를 보고 싶을 때",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/7-35edbb5b6eb181cab576e747eef806da",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-8108-95fa-d9f0033230c3",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-8162-b075-c865426b2209"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Answer TL;DR": {
+          "id": "M%5D_J",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Budget Simulator는 계정 연결 직후 바로 사용할 수 있는 기능이 아닙니다. 일반적으로 14일의 학습 기간이 지나고, 캠페인이 최적화 상태에 진입해야 이용할 수 있습니다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Budget Simulator는 계정 연결 직후 바로 사용할 수 있는 기능이 아닙니다. 일반적으로 14일의 학습 기간이 지나고, 캠페인이 최적화 상태에 진입해야 이용할 수 있습니다.",
+              "href": null
+            }
+          ]
+        },
+        "Keywords": {
+          "id": "QmNx",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "b20fcb78-f61b-4427-b944-f197acc920a8",
+              "name": "budget simulator",
+              "color": "yellow"
+            },
+            {
+              "id": "537d6718-86a1-4678-a64b-f8211e676142",
+              "name": "14 days",
+              "color": "red"
+            },
+            {
+              "id": "9955baf4-b82d-458b-8369-8e5a995546f7",
+              "name": "learning period",
+              "color": "default"
+            },
+            {
+              "id": "389f323e-5032-4ae1-a2f2-256197f9b3b2",
+              "name": "optimization state",
+              "color": "default"
+            }
+          ]
+        },
+        "When to Use": {
+          "id": "dHPG",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Budget Simulator가 비활성화돼 있거나 값이 보이지 않는다는 문의",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Budget Simulator가 비활성화돼 있거나 값이 보이지 않는다는 문의",
+              "href": null
+            }
+          ]
+        },
+        "Topic": {
+          "id": "eE%5Be",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "f738336c-c88e-4d3e-a037-3962243478f7",
+              "name": "Optimization",
+              "color": "yellow"
+            },
+            {
+              "id": "bc0c1365-08a8-48d8-9441-d6dcf2280ed2",
+              "name": "Budget Simulator",
+              "color": "orange"
+            },
+            {
+              "id": "714cc6e7-29ec-4236-9738-72573aa980f0",
+              "name": "Learning Period",
+              "color": "orange"
+            }
+          ]
+        },
+        "Audience": {
+          "id": "kHP%7D",
+          "type": "select",
+          "select": {
+            "id": "86d46269-9e7f-466e-917d-22cb562a9c83",
+            "name": "both",
+            "color": "default"
+          }
+        },
+        "Last Updated": {
+          "id": "ohxu",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Do Not Say": {
+          "id": "pNLc",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "초기 학습 기간의 미노출을 즉시 장애로 단정하지 말 것",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "초기 학습 기간의 미노출을 즉시 장애로 단정하지 말 것",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "r%7CI%3D",
+          "type": "select",
+          "select": {
+            "id": "23b6b248-30e8-4001-9b04-1f1e5d83ca49",
+            "name": "ready",
+            "color": "default"
+          }
+        },
+        "Source Links": {
+          "id": "zP%3Ei",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Activate Trial / Manage Optimization KR",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Activate Trial / Manage Optimization KR",
+              "href": null
+            }
+          ]
+        },
+        "Escalate If": {
+          "id": "%7Dp%3FB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "충분한 운영 기간과 최적화 상태 진입 후에도 기능이 계속 비정상일 때",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "충분한 운영 기간과 최적화 상태 진입 후에도 기능이 계속 비정상일 때",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Budget Simulator를 아직 사용할 수 없는 이유",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Budget Simulator를 아직 사용할 수 없는 이유",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Budget-Simulator-35edbb5b6eb1810895fad9f0033230c3",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-81c9-9799-fbe98e63e07b",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-8162-b075-c865426b2209"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Answer TL;DR": {
+          "id": "M%5D_J",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "월간 플랜 업그레이드는 즉시 적용되고 차액은 다음 청구서에 일할 계산되어 반영됩니다. 월간 다운그레이드와 해지는 다음 결제 주기부터 적용됩니다. 연간 플랜은 중도 업그레이드가 가능하며, 다운그레이드/해지는 미사용 개월 환불 가능성이 있지만 연간 할인분은 제외되고 10% 조기 해지 수수료가 부과됩니다. 월간 플랜은 환불이 불가합니다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "월간 플랜 업그레이드는 즉시 적용되고 차액은 다음 청구서에 일할 계산되어 반영됩니다. 월간 다운그레이드와 해지는 다음 결제 주기부터 적용됩니다. 연간 플랜은 중도 업그레이드가 가능하며, 다운그레이드/해지는 미사용 개월 환불 가능성이 있지만 연간 할인분은 제외되고 10% 조기 해지 수수료가 부과됩니다. 월간 플랜은 환불이 불가합니다.",
+              "href": null
+            }
+          ]
+        },
+        "Keywords": {
+          "id": "QmNx",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "3bc7db76-b6fd-459b-80fd-b32d1a68beb9",
+              "name": "monthly",
+              "color": "gray"
+            },
+            {
+              "id": "07607b4b-dd51-4ac6-a28d-6cca74dde5a6",
+              "name": "annual",
+              "color": "red"
+            },
+            {
+              "id": "94af1638-d951-419b-ac7c-37ddc571ac0a",
+              "name": "upgrade",
+              "color": "blue"
+            },
+            {
+              "id": "acde43c2-b8d6-4cae-b288-7296a157f842",
+              "name": "downgrade",
+              "color": "red"
+            },
+            {
+              "id": "6b32b258-07fc-4959-a287-63cabc43b97f",
+              "name": "refund",
+              "color": "default"
+            },
+            {
+              "id": "c32678fa-2c7d-40fe-a13a-9aff72c01731",
+              "name": "cancellation",
+              "color": "blue"
+            }
+          ]
+        },
+        "When to Use": {
+          "id": "dHPG",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "요금제 변경, 해지, 환불, 청구 규칙 문의",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "요금제 변경, 해지, 환불, 청구 규칙 문의",
+              "href": null
+            }
+          ]
+        },
+        "Topic": {
+          "id": "eE%5Be",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "3d14b1eb-5c2d-486d-8b03-586989f8a516",
+              "name": "Billing",
+              "color": "gray"
+            },
+            {
+              "id": "32bde1c1-d656-4069-943c-f1acf29fa0a0",
+              "name": "Subscription",
+              "color": "brown"
+            },
+            {
+              "id": "cd1d8b01-a884-4d69-84cc-493a7a31a68b",
+              "name": "Plan Change",
+              "color": "blue"
+            }
+          ]
+        },
+        "Audience": {
+          "id": "kHP%7D",
+          "type": "select",
+          "select": {
+            "id": "86d46269-9e7f-466e-917d-22cb562a9c83",
+            "name": "both",
+            "color": "default"
+          }
+        },
+        "Last Updated": {
+          "id": "ohxu",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Do Not Say": {
+          "id": "pNLc",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "개별 예외 케이스 환불을 즉시 보장하지 말 것",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "개별 예외 케이스 환불을 즉시 보장하지 말 것",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "r%7CI%3D",
+          "type": "select",
+          "select": {
+            "id": "23b6b248-30e8-4001-9b04-1f1e5d83ca49",
+            "name": "ready",
+            "color": "default"
+          }
+        },
+        "Source Links": {
+          "id": "zP%3Ei",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Manage Billing & Subscription",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Manage Billing & Subscription",
+              "href": null
+            }
+          ]
+        },
+        "Escalate If": {
+          "id": "%7Dp%3FB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "정책 예외 승인, 실제 청구 불일치, 결제 실패 후 계정 상태 확인 필요",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "정책 예외 승인, 실제 청구 불일치, 결제 실패 후 계정 상태 확인 필요",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "월간/연간 플랜 변경 규칙",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "월간/연간 플랜 변경 규칙",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/35edbb5b6eb181c99799fbe98e63e07b",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-814a-8eb6-de0e850bd798",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-8162-b075-c865426b2209"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Answer TL;DR": {
+          "id": "M%5D_J",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Optapex 사용을 위해서는 Amazon Ads Console 계정과 Seller Central 또는 Vendor Central 계정을 모두 연결해야 합니다. 각 계정에는 최소 Editor 권한이 필요합니다. 지역이 여러 개라면 지역별로 연결을 반복해야 하며, 신규 Ads account는 Ad profile 생성과 활성 ASIN 조건이 먼저 충족되어야 할 수 있습니다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Optapex 사용을 위해서는 Amazon Ads Console 계정과 Seller Central 또는 Vendor Central 계정을 모두 연결해야 합니다. 각 계정에는 최소 Editor 권한이 필요합니다. 지역이 여러 개라면 지역별로 연결을 반복해야 하며, 신규 Ads account는 Ad profile 생성과 활성 ASIN 조건이 먼저 충족되어야 할 수 있습니다.",
+              "href": null
+            }
+          ]
+        },
+        "Keywords": {
+          "id": "QmNx",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "40e9dcef-8203-45fc-8264-236d97a60e1d",
+              "name": "editor permission",
+              "color": "pink"
+            },
+            {
+              "id": "a4df5b8b-67b0-4fa4-9cbf-9b1071095878",
+              "name": "ads console",
+              "color": "pink"
+            },
+            {
+              "id": "fd12b37c-e76d-462c-8097-0a1f13accdac",
+              "name": "seller central",
+              "color": "green"
+            },
+            {
+              "id": "46f297cb-a613-44df-93e7-a11935bf55f5",
+              "name": "vendor central",
+              "color": "blue"
+            },
+            {
+              "id": "498a111b-d185-484b-af73-0b9d28774667",
+              "name": "ad profile",
+              "color": "blue"
+            }
+          ]
+        },
+        "When to Use": {
+          "id": "dHPG",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "연동 실패, 연결 전 준비사항, 여러 국가 계정 연결 문의",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "연동 실패, 연결 전 준비사항, 여러 국가 계정 연결 문의",
+              "href": null
+            }
+          ]
+        },
+        "Topic": {
+          "id": "eE%5Be",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "9c7abf37-5615-4ec5-bb49-afa6faac013d",
+              "name": "Onboarding",
+              "color": "red"
+            },
+            {
+              "id": "9aca6b87-432c-4273-a07f-22242f1126f4",
+              "name": "Amazon Connection",
+              "color": "green"
+            },
+            {
+              "id": "b28cb1e1-dad0-45cc-a06b-1ee5e2317f71",
+              "name": "Permissions",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Audience": {
+          "id": "kHP%7D",
+          "type": "select",
+          "select": {
+            "id": "86d46269-9e7f-466e-917d-22cb562a9c83",
+            "name": "both",
+            "color": "default"
+          }
+        },
+        "Last Updated": {
+          "id": "ohxu",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Do Not Say": {
+          "id": "pNLc",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "한쪽 계정만 연결해도 전체 기능이 정상 동작한다고 안내하지 말 것",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "한쪽 계정만 연결해도 전체 기능이 정상 동작한다고 안내하지 말 것",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "r%7CI%3D",
+          "type": "select",
+          "select": {
+            "id": "23b6b248-30e8-4001-9b04-1f1e5d83ca49",
+            "name": "ready",
+            "color": "default"
+          }
+        },
+        "Source Links": {
+          "id": "zP%3Ei",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Connecting Amazon Account KR",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Connecting Amazon Account KR",
+              "href": null
+            }
+          ]
+        },
+        "Escalate If": {
+          "id": "%7Dp%3FB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "정상 권한과 조건을 충족했는데도 인증/연결이 반복 실패할 때",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "정상 권한과 조건을 충족했는데도 인증/연결이 반복 실패할 때",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Amazon 계정 연동을 위해 필요한 조건",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Amazon 계정 연동을 위해 필요한 조건",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Amazon-35edbb5b6eb1814a8eb6de0e850bd798",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-8146-b9c3-c660a72b4889",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-8162-b075-c865426b2209"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Answer TL;DR": {
+          "id": "M%5D_J",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Brand Protection Dashboard는 활성화 직후 바로 채워지지 않을 수 있습니다. 이 기능은 최소 1주일 이상의 데이터가 필요하므로, 초기 수집이 끝났더라도 추가 시간이 필요할 수 있습니다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Brand Protection Dashboard는 활성화 직후 바로 채워지지 않을 수 있습니다. 이 기능은 최소 1주일 이상의 데이터가 필요하므로, 초기 수집이 끝났더라도 추가 시간이 필요할 수 있습니다.",
+              "href": null
+            }
+          ]
+        },
+        "Keywords": {
+          "id": "QmNx",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "fc6524dc-d8ea-4853-ad08-4e40dff403d6",
+              "name": "brand protection",
+              "color": "red"
+            },
+            {
+              "id": "da60a02d-90f0-4c9a-92cc-e40bf70e2461",
+              "name": "1 week",
+              "color": "red"
+            },
+            {
+              "id": "c70fffc7-cb14-43ac-a2b2-273997f4330b",
+              "name": "data requirement",
+              "color": "purple"
+            }
+          ]
+        },
+        "When to Use": {
+          "id": "dHPG",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Brand Protection 화면이 비어 있거나 바로 사용되지 않는다는 문의",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Brand Protection 화면이 비어 있거나 바로 사용되지 않는다는 문의",
+              "href": null
+            }
+          ]
+        },
+        "Topic": {
+          "id": "eE%5Be",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "e3109ec4-7e45-4df8-9389-bd362f006c6a",
+              "name": "Brand Protection",
+              "color": "blue"
+            },
+            {
+              "id": "6d4226de-650c-4f23-8f38-7e829fb83f08",
+              "name": "Trial",
+              "color": "pink"
+            },
+            {
+              "id": "e3844c80-84e9-4077-8e8f-aebcf3c69edf",
+              "name": "Data Collection",
+              "color": "brown"
+            }
+          ]
+        },
+        "Audience": {
+          "id": "kHP%7D",
+          "type": "select",
+          "select": {
+            "id": "86d46269-9e7f-466e-917d-22cb562a9c83",
+            "name": "both",
+            "color": "default"
+          }
+        },
+        "Last Updated": {
+          "id": "ohxu",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Do Not Say": {
+          "id": "pNLc",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "초기 데이터 부족 상황을 즉시 오류로 단정하지 말 것",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "초기 데이터 부족 상황을 즉시 오류로 단정하지 말 것",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "r%7CI%3D",
+          "type": "select",
+          "select": {
+            "id": "23b6b248-30e8-4001-9b04-1f1e5d83ca49",
+            "name": "ready",
+            "color": "default"
+          }
+        },
+        "Source Links": {
+          "id": "zP%3Ei",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Activate Trial / Brand Protection Dashboard Overview",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Activate Trial / Brand Protection Dashboard Overview",
+              "href": null
+            }
+          ]
+        },
+        "Escalate If": {
+          "id": "%7Dp%3FB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "충분한 운영 기간이 지난 뒤에도 데이터가 전혀 생성되지 않을 때",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "충분한 운영 기간이 지난 뒤에도 데이터가 전혀 생성되지 않을 때",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Brand Protection Dashboard가 바로 보이지 않을 때",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Brand Protection Dashboard가 바로 보이지 않을 때",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Brand-Protection-Dashboard-35edbb5b6eb18146b9c3c660a72b4889",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-8154-8e4d-fa994f9d95ef",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-8162-b075-c865426b2209"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Answer TL;DR": {
+          "id": "M%5D_J",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Reports와 Real-Time Dashboard는 데이터 반영 방식이 달라 수치가 다르게 보일 수 있습니다. Real-Time은 즉시성 중심의 요약 뷰이며, 일반적으로 1시간 단위로 갱신됩니다. Reports는 Amazon의 데이터 보정이 반영되며 최대 72시간 후 수치가 달라질 수 있습니다. 또한 Real-Time 매출은 반품/환불이 이미 차감된 값입니다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Reports와 Real-Time Dashboard는 데이터 반영 방식이 달라 수치가 다르게 보일 수 있습니다. Real-Time은 즉시성 중심의 요약 뷰이며, 일반적으로 1시간 단위로 갱신됩니다. Reports는 Amazon의 데이터 보정이 반영되며 최대 72시간 후 수치가 달라질 수 있습니다. 또한 Real-Time 매출은 반품/환불이 이미 차감된 값입니다.",
+              "href": null
+            }
+          ]
+        },
+        "Keywords": {
+          "id": "QmNx",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "fb5a4d90-7512-40df-8010-ce280d78c8f2",
+              "name": "realtime",
+              "color": "purple"
+            },
+            {
+              "id": "667dbd68-fa2c-4638-a1b0-fef4edb02ed0",
+              "name": "reports",
+              "color": "yellow"
+            },
+            {
+              "id": "43fc0ad2-3667-41c3-a11e-0531a9ee5cad",
+              "name": "returns",
+              "color": "brown"
+            },
+            {
+              "id": "04f10328-d8e1-4dae-ad9c-d8d22bb1cf38",
+              "name": "correction",
+              "color": "gray"
+            },
+            {
+              "id": "ccee8ef6-b1e5-42e1-ba00-6f8c269753e0",
+              "name": "update cycle",
+              "color": "pink"
+            }
+          ]
+        },
+        "When to Use": {
+          "id": "dHPG",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "매출, 광고비, 클릭 수 등 숫자 차이 문의",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "매출, 광고비, 클릭 수 등 숫자 차이 문의",
+              "href": null
+            }
+          ]
+        },
+        "Topic": {
+          "id": "eE%5Be",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "7737bcd0-0181-4a9f-a22b-610c9261a4fc",
+              "name": "Reporting",
+              "color": "purple"
+            },
+            {
+              "id": "c3029703-642e-4ac0-b25e-33e5e9bfb361",
+              "name": "Real-Time Dashboard",
+              "color": "orange"
+            },
+            {
+              "id": "e848fb4f-1c71-4838-ae9c-0949d5031c47",
+              "name": "Data Discrepancy",
+              "color": "default"
+            }
+          ]
+        },
+        "Audience": {
+          "id": "kHP%7D",
+          "type": "select",
+          "select": {
+            "id": "86d46269-9e7f-466e-917d-22cb562a9c83",
+            "name": "both",
+            "color": "default"
+          }
+        },
+        "Last Updated": {
+          "id": "ohxu",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Do Not Say": {
+          "id": "pNLc",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "단순 수치 차이만으로 버그라고 단정하지 말 것",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "단순 수치 차이만으로 버그라고 단정하지 말 것",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "r%7CI%3D",
+          "type": "select",
+          "select": {
+            "id": "23b6b248-30e8-4001-9b04-1f1e5d83ca49",
+            "name": "ready",
+            "color": "default"
+          }
+        },
+        "Source Links": {
+          "id": "zP%3Ei",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Reports Overview KR / Real-Time Dashboard KR",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Reports Overview KR / Real-Time Dashboard KR",
+              "href": null
+            }
+          ]
+        },
+        "Escalate If": {
+          "id": "%7Dp%3FB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "72시간 이상 경과 후에도 큰 차이가 지속되거나 특정 계정/세트만 비정상적일 때",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "72시간 이상 경과 후에도 큰 차이가 지속되거나 특정 계정/세트만 비정상적일 때",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Reports와 Real-Time Dashboard 숫자가 다른 이유",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Reports와 Real-Time Dashboard 숫자가 다른 이유",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Reports-Real-Time-Dashboard-35edbb5b6eb181548e4dfa994f9d95ef",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-8118-9853-d5ca4ded4d6d",
+      "created_time": "2026-05-12T07:32:00.000Z",
+      "last_edited_time": "2026-05-12T07:32:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-8162-b075-c865426b2209"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Answer TL;DR": {
+          "id": "M%5D_J",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Trial 활성화 후 데이터 수집이 시작되며, 초기 수집에는 최대 72시간이 걸릴 수 있습니다. 72시간 이내라면 정상 초기 수집 구간일 가능성이 높습니다. 72시간이 지난 뒤에도 주요 기능이 활성화되지 않으면 지원 티켓 확인이 필요합니다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Trial 활성화 후 데이터 수집이 시작되며, 초기 수집에는 최대 72시간이 걸릴 수 있습니다. 72시간 이내라면 정상 초기 수집 구간일 가능성이 높습니다. 72시간이 지난 뒤에도 주요 기능이 활성화되지 않으면 지원 티켓 확인이 필요합니다.",
+              "href": null
+            }
+          ]
+        },
+        "Keywords": {
+          "id": "QmNx",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "e7db4fad-41bb-4c92-b7c0-9d020c6701c1",
+              "name": "72 hours",
+              "color": "orange"
+            },
+            {
+              "id": "9f673b61-4053-46dd-b51c-dd46f585a7bd",
+              "name": "trial",
+              "color": "default"
+            },
+            {
+              "id": "7bbe7824-4f04-426d-94aa-9e6af2b6bd9c",
+              "name": "data collection",
+              "color": "blue"
+            },
+            {
+              "id": "d072c71e-d015-40e2-aef4-df4d699aec76",
+              "name": "activation",
+              "color": "green"
+            }
+          ]
+        },
+        "When to Use": {
+          "id": "dHPG",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Trial 직후 데이터 미노출, 기능 비활성화, 초기 세팅 후 성과가 안 보인다는 문의",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Trial 직후 데이터 미노출, 기능 비활성화, 초기 세팅 후 성과가 안 보인다는 문의",
+              "href": null
+            }
+          ]
+        },
+        "Topic": {
+          "id": "eE%5Be",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "6d4226de-650c-4f23-8f38-7e829fb83f08",
+              "name": "Trial",
+              "color": "pink"
+            },
+            {
+              "id": "9c7abf37-5615-4ec5-bb49-afa6faac013d",
+              "name": "Onboarding",
+              "color": "red"
+            },
+            {
+              "id": "e3844c80-84e9-4077-8e8f-aebcf3c69edf",
+              "name": "Data Collection",
+              "color": "brown"
+            }
+          ]
+        },
+        "Audience": {
+          "id": "kHP%7D",
+          "type": "select",
+          "select": {
+            "id": "86d46269-9e7f-466e-917d-22cb562a9c83",
+            "name": "both",
+            "color": "default"
+          }
+        },
+        "Last Updated": {
+          "id": "ohxu",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Do Not Say": {
+          "id": "pNLc",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "72시간 이내인데 시스템 장애로 단정하지 말 것",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "72시간 이내인데 시스템 장애로 단정하지 말 것",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "r%7CI%3D",
+          "type": "select",
+          "select": {
+            "id": "23b6b248-30e8-4001-9b04-1f1e5d83ca49",
+            "name": "ready",
+            "color": "default"
+          }
+        },
+        "Source Links": {
+          "id": "zP%3Ei",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Introduce KR / Activate Trial / Connecting Amazon Account",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Introduce KR / Activate Trial / Connecting Amazon Account",
+              "href": null
+            }
+          ]
+        },
+        "Escalate If": {
+          "id": "%7Dp%3FB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "72시간 경과 후에도 핵심 기능 미활성화, 계정 연결 실패, 권한 문제 의심",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "72시간 경과 후에도 핵심 기능 미활성화, 계정 연결 실패, 권한 문제 의심",
+              "href": null
+            }
+          ]
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Trial 활성화 후 데이터가 바로 보이지 않을 때",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Trial 활성화 후 데이터가 바로 보이지 않을 때",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Trial-35edbb5b6eb181189853d5ca4ded4d6d",
+      "public_url": null,
+      "archived": false
+    }
+  ],
+  "intake_rows": [
+    {
+      "object": "page",
+      "id": "35edbb5b-6eb1-81cc-be86-e94f858e0407",
+      "created_time": "2026-05-12T07:16:00.000Z",
+      "last_edited_time": "2026-05-12T07:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "b704ef05-ecba-4231-93d8-c14abf6b112b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "35edbb5b-6eb1-81fe-b712-d7e473b7cf43"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Material URL": {
+          "id": "AV%3F%7B",
+          "type": "url",
+          "url": "https://gitlab.dev.mopapp.net/mop/etl/mop-glue/-/merge_requests/1767"
+        },
+        "Notes": {
+          "id": "C~%3Et",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "GitLab source is currently blocked by Cloudflare from this runtime, so content extraction is pending. Once MR diff/description is accessible, distill it into CS Knowledge Sources and derive answer cards if customer-facing implications exist.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "GitLab source is currently blocked by Cloudflare from this runtime, so content extraction is pending. Once MR diff/description is accessible, distill it into CS Knowledge Sources and derive answer cards if customer-facing implications exist.",
+              "href": null
+            }
+          ]
+        },
+        "Status": {
+          "id": "QXqh",
+          "type": "select",
+          "select": {
+            "id": "d8b113ae-84bc-4b19-a239-4b3dd55efa6e",
+            "name": "blocked",
+            "color": "default"
+          }
+        },
+        "Requested By": {
+          "id": "hYv%3D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "이용혁",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "이용혁",
+              "href": null
+            }
+          ]
+        },
+        "Created At": {
+          "id": "mKNS",
+          "type": "date",
+          "date": {
+            "start": "2026-05-12",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Material Type": {
+          "id": "pdJq",
+          "type": "select",
+          "select": {
+            "id": "de7c6722-07d7-4633-a19f-af2f8fc543df",
+            "name": "MR",
+            "color": "default"
+          }
+        },
+        "Title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "MR 1767 - mop-glue knowledge ingestion",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "MR 1767 - mop-glue knowledge ingestion",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/MR-1767-mop-glue-knowledge-ingestion-35edbb5b6eb181ccbe86e94f858e0407",
+      "public_url": null,
+      "archived": false
+    }
+  ]
+}

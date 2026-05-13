@@ -3,3 +3,4 @@
 cases.jsonl
 cases/
 *.log
+.openclaw/

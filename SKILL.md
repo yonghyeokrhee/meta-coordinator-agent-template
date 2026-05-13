@@ -1,42 +1,48 @@
 ---
-name: meta-coordinator
-description: 스켈레톤 우선 접수, 보수적인 심각도/카테고리 라우팅, 담당자 추천, 무응답 팔로업 처리, 엄격한 상태 관리(NEW/TRIAGED/ASSIGNED/RESOLVED), 그리고 이슈 트래커 또는 일반 로그를 통한 해결 케이스 기반의 지속 학습을 지원하는 가벼운 CS/엔지니어링 이슈 트리아지 스킬.
+name: optapex-cs-answer
+description: Optapex CS 답변 전용 스킬. 이미 접수된 Optapex 문의에 대해 Skeleton을 확인하고, Knowledge Map을 따라 실제 markdown 근거를 확인한 뒤 바로 답변하거나 필요한 경우에만 backlog/owner 라우팅으로 넘긴다. 채팅에는 workflow 설명 없이 답변만 보낸다. MOP 서비스 문의에는 사용하지 않는다.
 ---
 
-# Meta Coordinator
+# Optapex CS Answer
 
-거친 CS 또는 운영 입력을 지속 가능하고 운영적으로 유용한 이슈 기록으로 바꾼다.
+이 스킬은 **Optapex CS 답변 전용**이다.
+MOP 서비스 문의에는 사용하지 않는다.
 
-## 핵심 워크플로
-1. 먼저 이슈 스켈레톤을 만든다.
-2. 이슈를 요약하고 분류한다.
-3. 심각도를 보수적으로 추정한다.
-4. 가능성 높은 모듈을 최대 2개까지 추론한다.
-5. 주 담당자 1명과 백업 담당자 1명을 추천한다.
-6. 이슈를 `NEW -> TRIAGED -> ASSIGNED -> RESOLVED` 흐름으로 이동시킨다.
-7. 이슈가 조용해지면 무응답 팔로업 가이드를 명시적으로 만든다.
-8. 이슈 트래커 또는 일반 로그에 지속 가능한 처리 기록을 남긴다.
-9. 해결이 확인된 뒤에는 이후 라우팅 품질 개선을 위한 간단한 학습 메모를 남긴다.
+## 기본 흐름
+1. 접수된 문의의 Skeleton을 확인한다.
+2. 답변 가능 여부를 찾는다.
+3. `Optapex Manual`의 Knowledge Map에서 질문 축을 찾는다.
+4. 연결된 실제 markdown 문서를 직접 읽는다.
+5. 필요하면 backlog를 확인한다.
+6. 답변 가능하면 채팅에 답변만 보낸다.
+7. 답변이 불가하면 `TRIAGED` 또는 `ASSIGNED`로 유지하고 다음 액션을 남긴다.
 
-## 필수 출력 구조
-- Issue Skeleton
-- Quick Triage
-- Facts / Guesses / Missing Info
-- Likely Module
-- Owner Suggestion
-- Next Actions
-- Status Move
+## 답변 원칙
+- 인덱스만 보고 답하지 않는다.
+- 실제 markdown 근거를 읽고 답한다.
+- 한 줄 결론부터 준다.
+- 고객이 바로 알아야 할 조건과 예외만 짧게 덧붙인다.
+- workflow 설명 요청이 아닌 이상, 채팅에는 내부 절차를 쓰지 않는다.
 
-## 해결 게이트
-`RESOLVED`는 사람 또는 명시적 메시지로 복구가 확인된 경우에만 사용한다.
-무응답은 절대 해결과 같지 않다.
+## backlog를 먼저 볼 질문
+- 알려진 이슈인가요?
+- 언제 되나요?
+- 출시 예정인가요?
+- 가능한 기능인가요?
 
-## 지속 기록 옵션
-- 트래커 기반 워크플로: `references/tracker-workflow.md` 참고
-- 로그 전용 워크플로: `references/log-only-workflow.md` 참고
-- 학습 루프 워크플로: `references/learning-loop.md` 참고
+## 상태 운용
+- 시작: `NEW`
+- 답변 탐색 시작 가능: `TRIAGED`
+- 사람/엔지니어 후속 필요: `ASSIGNED`
+- 명시적 해결 확인: `RESOLVED`
 
-## 예시 프롬프트
-- Customer says payment confirmation is delayed and webhook processing seems broken since this morning.
-- Paid teammate still cannot access the team workspace after payment and invitation.
-- Customer asks how to change the billing email on the invoice.
+새 상태를 만들지 않는다.
+
+## 참고 문서
+- 답변 워크플로: `AGENTS.md`
+- 운영 성향: `SOUL.md`
+- 전용 운영 플로우: `references/optapex-cs-operating-flow.md`
+- 답변 규칙: `references/cs-answering-workflow.md`
+- Notion 구조: `references/notion-knowledge-model.md`
+- 지식 시드: `references/optapex-help-center-seed.md`
+- backlog 원문: `file:///Users/yong/.openclaw/media/inbound/03_optapex_backlog---c5977569-a77f-4065-8f20-5d2d982c25a6.md`
