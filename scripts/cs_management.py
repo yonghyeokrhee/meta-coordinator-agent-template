@@ -77,6 +77,10 @@ def notion_update_page(page_id: str, properties: dict):
     return notion_request('PATCH', f'/pages/{page_id}', {'properties': properties})
 
 
+def iso_now() -> str:
+    return datetime.now().astimezone().isoformat(timespec='seconds')
+
+
 def get_plain_text(prop: dict | None) -> str:
     if not prop:
         return ''
@@ -129,21 +133,51 @@ def fetch_notion_cases(limit: int = 100) -> list[dict]:
         rows.append({
             'id': item.get('id'),
             'url': item.get('url', ''),
+            'csNo': get_plain_text(p.get(props.get('csNo'))) if props.get('csNo') else '',
             'title': get_plain_text(p.get(props['title'])),
             'rawStatus': raw_status,
             'status': normalize_status(raw_status.lower(), mapping),
             'notes': get_plain_text(p.get(props['notes'])),
             'requestedBy': get_plain_text(p.get(props['requestedBy'])),
             'createdAt': get_plain_text(p.get(props['createdAt'])),
+            'resolvedAt': get_plain_text(p.get(props.get('resolvedAt'))) if props.get('resolvedAt') else '',
             'materialUrl': get_plain_text(p.get(props['materialUrl'])),
         })
     return rows
 
 
-def fetch_cases(limit: int = 100) -> list[dict]:
+def sync_resolved_timestamps(limit: int = 200) -> dict:
+    config = load_config()
+    notion = config['providers']['notion']
+    props = notion['properties']
+    resolved_prop = props.get('resolvedAt')
+    if config['active']['kind'] != 'notion' or not resolved_prop:
+        return {'updated': 0, 'resolvedSet': 0, 'resolvedCleared': 0}
+
+    cases = fetch_notion_cases(limit)
+    updated = 0
+    resolved_set = 0
+    resolved_cleared = 0
+    for case in cases:
+        want_value = case['status'] == 'RESOLVED'
+        has_value = bool(case.get('resolvedAt'))
+        if want_value and not has_value:
+            notion_update_page(case['id'], {resolved_prop: {'date': {'start': iso_now()}}})
+            updated += 1
+            resolved_set += 1
+        elif not want_value and has_value:
+            notion_update_page(case['id'], {resolved_prop: {'date': None}})
+            updated += 1
+            resolved_cleared += 1
+    return {'updated': updated, 'resolvedSet': resolved_set, 'resolvedCleared': resolved_cleared}
+
+
+def fetch_cases(limit: int = 100, syncResolvedAt: bool = True) -> list[dict]:
     config = load_config()
     kind = config['active']['kind']
     if kind == 'notion':
+        if syncResolvedAt:
+            sync_resolved_timestamps(max(limit, 200))
         return fetch_notion_cases(limit)
     raise SystemExit(f'unsupported CS management provider: {kind}')
 
@@ -168,7 +202,11 @@ def update_case_status(case_id: str, status: str):
     props = notion['properties']
     if config['active']['kind'] != 'notion':
         raise SystemExit('unsupported CS management provider for update-status')
-    return notion_update_page(case_id, {props['status']: select_prop(status)})
+    properties = {props['status']: select_prop(status)}
+    resolved_prop = props.get('resolvedAt')
+    if resolved_prop:
+        properties[resolved_prop] = {'date': {'start': iso_now()}} if status == 'RESOLVED' else {'date': None}
+    return notion_update_page(case_id, properties)
 
 
 def add_answer_record(case_id: str, answer_note: str, next_status: str | None = None):
@@ -185,6 +223,9 @@ def add_answer_record(case_id: str, answer_note: str, next_status: str | None = 
     properties = {props['notes']: rich_prop(merged_notes)}
     if next_status:
         properties[props['status']] = select_prop(next_status)
+        resolved_prop = props.get('resolvedAt')
+        if resolved_prop:
+            properties[resolved_prop] = {'date': {'start': iso_now()}} if next_status == 'RESOLVED' else {'date': None}
     return notion_update_page(case_id, properties)
 
 
@@ -195,13 +236,15 @@ def cmd_list_open(args):
 
 def cmd_summary(_args):
     config = load_config()
-    cases = fetch_cases(100)
+    sync_result = sync_resolved_timestamps(200)
+    cases = fetch_cases(100, syncResolvedAt=False)
     opened = open_cases(cases)
     by_status: dict[str, int] = {}
     for case in opened:
         by_status[case['status']] = by_status.get(case['status'], 0) + 1
     print(json.dumps({
         'tool': config['active'],
+        'resolvedAtSync': sync_result,
         'openCount': len(opened),
         'openByStatus': by_status,
         'openCases': opened[:10],
@@ -228,6 +271,10 @@ def main():
 
     p = sub.add_parser('summary')
     p.set_defaults(func=cmd_summary)
+
+    p = sub.add_parser('sync-resolved-at')
+    p.add_argument('--limit', type=int, default=200)
+    p.set_defaults(func=lambda args: print(json.dumps(sync_resolved_timestamps(args.limit), ensure_ascii=False, indent=2)))
 
     p = sub.add_parser('update-status')
     p.add_argument('--case-id', required=True)

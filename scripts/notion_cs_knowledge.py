@@ -7,7 +7,7 @@ import sys
 import urllib.request
 import urllib.error
 from pathlib import Path
-from datetime import date
+from datetime import datetime
 
 ROOT = Path(__file__).resolve().parents[1]
 ENV_PATH = ROOT / '.env'
@@ -162,12 +162,14 @@ def seed(parent_page_id: str):
 
     intake = create_database(parent_page_id, 'CS Intake Queue', {
         'Title': {'title': {}},
+        'CS No': {'rich_text': {}},
         'Status': {'select': {'options': [{'name': x} for x in ['NEW', 'TRIAGED', 'ASSIGNED', 'PENDING', 'RESOLVED']]}},
         'Material URL': {'url': {}},
         'Material Type': {'select': {'options': [{'name': x} for x in ['MR', 'issue', 'doc', 'message', 'policy', 'other']]}},
         'Requested By': {'rich_text': {}},
         'Notes': {'rich_text': {}},
         'Created At': {'date': {}},
+        'Resolved At': {'date': {}},
     })
 
     state = {
@@ -193,10 +195,12 @@ def seed(parent_page_id: str):
                 'databaseId': intake['id'],
                 'properties': {
                     'title': 'Title',
+                    'csNo': 'CS No',
                     'status': 'Status',
                     'notes': 'Notes',
                     'requestedBy': 'Requested By',
                     'createdAt': 'Created At',
+                    'resolvedAt': 'Resolved At',
                     'materialUrl': 'Material URL'
                 },
                 'statusMapping': {
@@ -228,16 +232,24 @@ def create_db_page(database_id: str, properties: dict, children: list[dict] | No
     return notion_request('POST', '/pages', payload)
 
 
+def next_intake_number(database_id: str) -> str:
+    result = notion_request('POST', f'/databases/{database_id}/query', {'page_size': 100})
+    existing = result.get('results', [])
+    return f'cs-{len(existing) + 1:03d}'
+
+
 def add_intake(title: str, url: str, requested_by: str, notes: str, material_type: str, status: str):
     state = load_state()
+    cs_no = next_intake_number(state['intake_db_id'])
     page = create_db_page(state['intake_db_id'], {
         'Title': title_prop(title),
+        'CS No': rich_prop(cs_no),
         'Status': select_prop(status),
         'Material URL': url_prop(url),
         'Material Type': select_prop(material_type),
         'Requested By': rich_prop(requested_by),
         'Notes': rich_prop(notes),
-        'Created At': date_prop(str(date.today())),
+        'Created At': date_prop(datetime.now().astimezone().isoformat(timespec='seconds')),
     })
     print(json.dumps({'id': page['id'], 'url': page['url']}, ensure_ascii=False, indent=2))
 

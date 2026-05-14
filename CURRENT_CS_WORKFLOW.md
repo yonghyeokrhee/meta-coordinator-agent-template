@@ -78,12 +78,15 @@
 4. 그래도 부족하면 추가 확인 또는 owner 라우팅 판단
 
 ### 답변 시 근거 규칙
-즉답형(Q1)으로 답하는 경우, 답변에는 **반드시 `[file + line range]` 인용**을 포함한다.
+즉답형(Q1)으로 답하는 경우, 답변에는 **반드시 실제 근거 문구 + 지식 문서명**을 포함한다.
+
+`Source: knowledge/...#L...` 같은 path/line-range 인용은 사용자 답변에 쓰지 않는다.
 
 예시:
-- `Source: knowledge/04_optapex_help_center.md#L538-L542`
+- `답변 근거`
+- `**현재 문서 기준으로 데이터는 child ASIN 기준으로 확인합니다.** / **Optapex Manual Onboarding**`
 
-인용은 **실제로 읽은 markdown 파일 기준**으로만 붙인다.
+근거는 **실제로 읽은 markdown 파일 기준**으로만 붙이고, 사용자에게는 file path/line range 대신 **실제 답변의 근거가 된 짧은 문구**를 보여준다.
 
 ---
 
@@ -131,7 +134,7 @@ backlog처럼 보여도 아래가 함께 필요하면 **에스컬레이션형을
 ## 8. 답변 처리 규칙
 ### 즉답형
 - markdown 근거 확인 후 짧게 답변
-- 답변에 `[file + line range]` 인용 포함
+- 답변에 `실제 근거 문구 / 지식 문서명` 포함
 - 답변 기록 남김
 - 담당자 확인 전이면 `PENDING`
 - 확인 후 `RESOLVED`

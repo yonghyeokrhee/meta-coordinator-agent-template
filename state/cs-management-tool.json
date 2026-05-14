@@ -19,10 +19,12 @@
       "databaseId": "35edbb5b-6eb1-81fe-b712-d7e473b7cf43",
       "properties": {
         "title": "Title",
+        "csNo": "CS No",
         "status": "Status",
         "notes": "Notes",
         "requestedBy": "Requested By",
         "createdAt": "Created At",
+        "resolvedAt": "Resolved At",
         "materialUrl": "Material URL"
       },
       "statusMapping": {
