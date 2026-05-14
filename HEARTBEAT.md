@@ -18,7 +18,9 @@
    - `openCases` 가 있으면 각 케이스의 `status`, `title`, `notes`를 보고 가장 가까운 다음 액션만 짧게 정리한다.
    - `PENDING` 상태가 있으면 반드시 담당자에게 `RESOLVED 여부 확인 필요`라는 다음 액션을 넣는다.
 
-4. 이 Discord 채널에 반드시 `message(action=send)`로 visible update를 보낸다.
+4. 반드시 Discord parent 채널 `#cs-ai` (`1502969606409551953`)로 visible update를 보낸다.
+   - `message(action=send, channel="discord", target="channel:1502969606409551953")`를 사용한다.
+   - 현재 thread/session 문맥을 따라가게 두지 않는다.
    - 열린 이슈가 없으면 정확히 아래 문구를 보낸다.
      - `현재 열린 CS 이슈 없음. 모두 resolved 상태입니다.`
    - 열린 이슈가 있으면 아래 형식으로 짧게 요약한다.
