@@ -6,11 +6,13 @@
 
 1. 먼저 활성 `CS Management Tool`을 기준으로 상태를 조회한다.
    - 현재 기준 source of truth는 `Notion / Optapex Manual / CS Intake Queue` 다.
+   - 조회 방식은 브라우저에서 Notion 페이지를 수동 확인하는 것이 아니라, `scripts/cs_management.py`가 Notion API로 `CS Intake Queue` database를 직접 조회하는 방식이다.
    - 최근 채팅, 세션 로그, 기억, 추정으로 상태를 대신 판단하지 않는다.
 
 2. 반드시 아래 명령을 직접 실행해서 열린 이슈를 조회한다.
    - `python3 scripts/cs_management.py summary`
    - 이 단계는 선택 사항이 아니다.
+   - 이 명령은 Notion API를 호출해 최신 `createdAt` 기준으로 케이스를 조회하고, 그 결과를 바탕으로 열린 이슈 수와 상태별 개수를 계산한다.
    - heartbeat 상태 판단은 이 스크립트 실행 결과와 분리되면 안 된다.
 
 3. 스크립트 결과를 기준으로 `RESOLVED`가 아닌 케이스만 열린 이슈로 본다.
