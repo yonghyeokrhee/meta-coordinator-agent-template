@@ -1,3 +1,11 @@
+---
+title: "LG Optapex 시작하기"
+category: setup
+tags: [시작하기, Amazon계정연결, Trial, 최적화세트]
+summary: "Amazon Ads Console·Seller/Vendor Central 연결부터 Trial 활성화, 첫 최적화 세트 설정, 모니터링까지 4단계 온보딩 가이드."
+related: ['03_데이터_연동하기.md', '04_Trial_활성화하기.md', '11_최적화_세트_설정하기.md', '12_최적화_세트_모니터링.md']
+---
+
 # 2. LG Optapex 시작하기
 
 Amazon 계정을 Optapex에 연결하고 최적화 세트를 생성하는 방법을 안내합니다.
@@ -33,3 +41,12 @@ LG Optapex를 이용하려면 **Amazon Ads Console 계정**과 **Amazon Seller C
 - **[예산 모니터링 → 섹션 12](#12-최적화-세트-모니터링)**: Budget Usage 경고 신호를 확인하고, 예산 시뮬레이터로 현재 예산이 목표 달성에 충분한지 사전에 검토합니다.
 
 ---
+
+---
+
+## 관련 문서
+
+- [03_데이터_연동하기.md](03_데이터_연동하기.md)
+- [04_Trial_활성화하기.md](04_Trial_활성화하기.md)
+- [11_최적화_세트_설정하기.md](11_최적화_세트_설정하기.md)
+- [12_최적화_세트_모니터링.md](12_최적화_세트_모니터링.md)

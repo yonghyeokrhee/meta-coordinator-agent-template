@@ -1,3 +1,11 @@
+---
+title: "AI Agent 사용 가이드"
+category: feature
+tags: [AIAgent, Beta, 지표분석, 상품분류, 최적화세트생성, 대화기록]
+summary: "AI Agent 4대 기능(지표 분석·상품 분류·실적 원인 분석·최적화 세트 생성), 사용 5단계, FAQ."
+related: ['11_최적화_세트_설정하기.md', '21_Product_리포트_이해하기.md']
+---
+
 # 27. AI Agent 사용 가이드
 
 > **Note:** 본 기능은 현재 **Beta 버전**으로 운영 중이며, 지속적으로 고도화될 예정입니다.
@@ -77,3 +85,10 @@ AI Agent는 Optapex에 연동된 **Amazon Ads** 및 **Seller Central / Vendor Ce
 ---
 
 > 🚩 궁금하신 점이나 추가 문의사항이 있으신 경우, studio.optapex.com 페이지 우측 하단 Ticket을 통해 연락 부탁 드립니다.
+
+---
+
+## 관련 문서
+
+- [11_최적화_세트_설정하기.md](11_최적화_세트_설정하기.md)
+- [21_Product_리포트_이해하기.md](21_Product_리포트_이해하기.md)

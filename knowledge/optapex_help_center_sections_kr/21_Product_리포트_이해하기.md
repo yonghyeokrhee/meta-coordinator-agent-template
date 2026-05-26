@@ -1,3 +1,11 @@
+---
+title: "Product 리포트 이해하기"
+category: report
+tags: [Product리포트, 어트리뷰션, ProductOverview, ProfitTrend, 이상감지, LowStock, Growth]
+summary: "날짜·필터 활용법, 어트리뷰션 윈도우(1/7/14/30일), ASIN 이상감지 배지(Low Stock·Excess Stock·Growth·Efficiency), Profit Trend 마진 공식."
+related: ['18_실시간_대시보드.md', '19_다운로드.md', '22_Brand_리포트_이해하기.md', '23_지표_이해하기.md']
+---
+
 # 21. Product 리포트 이해하기
 
 시간 흐름에 따른 성과를 분석해 Amazon 비즈니스의 패턴을 파악하세요.
@@ -50,3 +58,12 @@ Estimated Margin = [총매출 - 광고비 - 추천수수료 - FBA처리수수료
 ```
 
 ---
+
+---
+
+## 관련 문서
+
+- [18_실시간_대시보드.md](18_실시간_대시보드.md)
+- [19_다운로드.md](19_다운로드.md)
+- [22_Brand_리포트_이해하기.md](22_Brand_리포트_이해하기.md)
+- [23_지표_이해하기.md](23_지표_이해하기.md)
