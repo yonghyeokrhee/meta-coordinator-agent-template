@@ -72,12 +72,16 @@
 답변은 반드시 검증된 문서 근거를 기반으로 한다.
 
 ### 탐색 순서
-1. `Optapex Manual`의 Knowledge Map / taxonomy 로 질문 방향 파악
-2. 연결된 실제 markdown 문서 직접 읽기
-3. backlog성 질문이면 backlog 확인
-4. 그래도 부족하면 추가 확인 또는 owner 라우팅 판단
+1. `knowledge/optapex_help_center_sections_kr/00_Index.md` 로 질문과 연결된 파일 목록 선택
+2. 선택된 실제 markdown 문서 직접 읽기
+3. 위 문서만으로 부족하거나, 시스템/운영 이슈 / 공개 Help Center와 내부 문서 충돌 / 에스컬레이션 판단이 애매한 경우에만 `references/optapex-source-routing.md` 참고
+4. 일정 / known issue / 출시 예정 / 가능 여부 확인이 여전히 필요할 때만 backlog 확인
+5. 그래도 부족하면 추가 확인 또는 owner 라우팅 판단
 
 ### 답변 시 근거 규칙
+- **답변 근거가 될 만한 실제 문서를 확보했고 그 문서만으로 결론이 났으면, 추가 탐색은 하지 않는다.**
+- **추가 탐색은 현재 문서만으로 결론이 나지 않거나, 에스컬레이션/known issue/공개문구 우선순위 충돌 판단이 남아 있을 때만 한다.**
+
 즉답형(Q1)으로 답하는 경우, 답변에는 **반드시 실제 근거 문구 + 지식 문서명**을 포함한다.
 
 `Source: knowledge/...#L...` 같은 path/line-range 인용은 사용자 답변에 쓰지 않는다.
