@@ -21,7 +21,8 @@
    - `PENDING` 상태가 있으면 반드시 담당자에게 `RESOLVED 여부 확인 필요`라는 다음 액션을 넣는다.
 
 4. 반드시 Discord parent 채널 `#cs-ai` (`1502969606409551953`)로 visible update를 보낸다.
-   - `message(action=send, channel="discord", target="channel:1502969606409551953")`를 사용한다.
+   <!-- Discord 전송 방법: 실제 구현 방식(MCP 툴, OpenClaw API 등)은 환경에 맞게 지정 필요 -->
+   <!-- 예시 pseudo-code: message(action=send, channel="discord", target="channel:1502969606409551953") -->
    - 현재 thread/session 문맥을 따라가게 두지 않는다.
    - 열린 이슈가 없으면 정확히 아래 문구를 보낸다.
      - `현재 열린 CS 이슈 없음. 모두 resolved 상태입니다.`

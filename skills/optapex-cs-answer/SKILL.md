@@ -14,13 +14,14 @@ MOP 서비스 문의에는 사용하지 않는다.
 3. 즉답형 / backlog 확인형 / 에스컬레이션형이 섞여 있으면 질문 단위로 분리한다.
 4. 분리된 질문 목록과 bucket 판단을 질문자인 AM에게 먼저 확인받는다.
 5. 상태 추적/관리 맥락이면 먼저 `CS Management Tool`을 확인한다.
-6. **에스컬레이션 필요 여부를 먼저 판단한다.**
-7. 에스컬레이션이 아니면 backlog 확인형 여부를 판단한다.
-8. 둘 다 아니면 즉답형 여부를 판단한다.
-9. `knowledge/optapex_help_center_sections_kr/00_Index.md` 를 먼저 읽고 질문과 연결된 파일 목록을 고른다.
-10. Index가 가리킨 실제 markdown 문서를 직접 읽는다.
-11. 위 문서만으로 부족하거나, 시스템/운영 이슈 / 공개 Help Center와 내부 문서 충돌 / 에스컬레이션 판단이 애매한 경우에만 `references/optapex-source-routing.md` 를 예외적으로 참고한다.
-12. backlog는 **별도 필수 2차 조회가 아니라**, Index 또는 실제 section 문서를 읽은 뒤에도 질문이 `알려진 이슈 / ETA / 출시 예정 / 가능 여부`에 해당할 때만 `knowledge/03_optapex_backlog.md` 를 추가로 확인한다.
+6-8. 분기 순서는 에스컬레이션 > backlog > 즉답형 순서를 따른다. → `../../AGENTS.md §3` 참고
+9. `knowledge/00_Index.md` 를 읽고 조회 순서를 확인한다.
+10. **1단계**: 질문 유형에 해당하는 파일을 `01 → 02 → 03` 순서로 읽는다.
+    - 파일을 읽을 때마다 답변이 충분한지 판단한다.
+    - **충분하면 즉시 멈추고 답변으로 넘어간다.**
+    - `03_optapex_backlog.md`는 "알려진 이슈 / ETA / 출시 예정 / 가능 여부" 유형일 때만 연다.
+11. **2단계**: 1단계로 부족할 경우에만 `knowledge/04_help_center/00_Index.md`를 읽고, 연결된 섹션 파일을 순서대로 읽는다.
+12. 2단계도 부족하면 `references/optapex-source-routing.md` 를 예외적으로 참고한다.
 13. 답변 가능하면 채팅에 답변만 보낸다.
 14. 답변이 나가면 `CS Intake Queue`에 답변 기록을 남긴다.
 15. 담당자 확인 전이면 `PENDING`으로 두고 종결 여부 확인을 남긴다.
@@ -28,11 +29,8 @@ MOP 서비스 문의에는 사용하지 않는다.
 17. `Q1 / Q2 / Q3` 모두 No 인 경우에는 `KB gap / 문서화 필요`로 기록하고 지식 보강 후보를 남긴다.
 
 ## 답변 원칙
-- `00_Index.md` 는 항상 첫 진입점으로 쓰되, 파일 선택용으로만 쓴다.
-- 인덱스만 보고 답하지 않는다.
-- 답변 근거는 선택된 실제 markdown 문서에서만 잡는다.
-- **답변 근거가 될 만한 실제 문서를 확보했고 그 문서만으로 결론이 났으면, 추가 탐색은 하지 않는다.**
-- **추가 탐색은 현재 문서만으로 결론이 나지 않거나, 에스컬레이션/known issue/공개문구 우선순위 충돌 판단이 남아 있을 때만 한다.**
+- 조회 순서는 §기본 흐름 9-12번을 따른다. 인덱스만 보고 답하지 않는다.
+- 답변 근거는 실제로 읽은 markdown 문서에서만 잡는다.
 - backlog는 자동 추가 조회 대상이 아니라, index 기반 선택 이후에도 일정/known issue 확인이 남을 때만 여는 예외 source다.
 - KB에 일반 설명이 있다는 이유만으로 즉답형으로 보내지 않는다.
 - 계정별 확인, 운영 조치, 기술 확인이 필요하면 먼저 에스컬레이션형으로 본다.
@@ -62,11 +60,8 @@ MOP 서비스 문의에는 사용하지 않는다.
 backlog 정보는 이 경우 보조 근거로만 사용한다.
 
 ## 상태 운용
-- 시작: `NEW`
-- 답변 탐색 시작 가능: `TRIAGED`
-- 사람/엔지니어 후속 필요: `ASSIGNED`
-- 답변 후 담당자 확인 대기: `PENDING`
-- 담당자 확인 또는 종결 확인 완료: `RESOLVED`
+
+→ `../../AGENTS.md §2` 참고
 
 bucket은 질문 단위에서 상호배타적으로 본다. 하나의 질문은 하나의 bucket만 가진다.
 새 상태를 만들지 않는다.
@@ -79,8 +74,11 @@ bucket은 질문 단위에서 상호배타적으로 본다. 하나의 질문은 
 ## 참고 문서
 - 답변 워크플로: `../../AGENTS.md`
 - 운영 성향: `../../SOUL.md`
+- 설계/수정 맥락 구분: `../../references/little-j-maintenance-mode.md`
 - CS 관리 도구 계약: `../../references/cs-management-tool.md`
 - source 선택 규칙: `../../references/optapex-source-routing.md`
 - help-center 질문 축: `../../references/optapex-help-center-taxonomy.md`
-- backlog 원문: `file:///Users/yong/.openclaw/workspace-cs-agent/knowledge/03_optapex_backlog.md`
-- canonical knowledge folder: `file:///Users/yong/.openclaw/workspace-cs-agent/knowledge`
+- knowledge index: `../../knowledge/00_Index.md`
+- backlog 원문: `../../knowledge/03_optapex_backlog.md`
+- help center index: `../../knowledge/04_help_center/00_Index.md`
+- canonical knowledge folder: `../../knowledge`

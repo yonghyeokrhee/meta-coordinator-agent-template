@@ -4,3 +4,4 @@ cases.jsonl
 cases/
 *.log
 .openclaw/
+*.code-workspace

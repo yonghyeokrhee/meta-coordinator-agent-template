@@ -548,7 +548,7 @@ scope_tags:
 
 - **이 문서에서 답이 안 나오는 경우**:
   - 일반 응대 케이스 → [01_system_operations_manual.md](./01_system_operations_manual.md)
-  - 기능 / 지표 정의 / FAQ → [02_optapex_manual_onboarding.md](./02_optapex_manual_onboarding.md)
+  - 기능 / 지표 정의 / FAQ → [02_optapex_manual.md](./02_optapex_manual.md)
 
 ### 7.2 답변 시 사용 규칙 (백로그 특화)
 

@@ -75,8 +75,8 @@ Use this default precedence unless the workspace says otherwise:
 When a markdown mirror exists, set `Source URL` to that markdown path.
 Examples:
 - `file:///.../01_system_operations_manual...md`
-- `file:///.../02_optapex_manual_onboarding.md`
-- `file:///.../03_optapex_backlog...md`
-- `file:///.../04_optapex_help_center...md`
+- `file:///.../02_optapex_manual.md`
+- `file:///.../03_optapex_backlog.md`
+- `file:///.../04_help_center/00_Index.md` (섹션별 접근)
 
 Keep the external source URL in page body notes if it helps trace origin.
